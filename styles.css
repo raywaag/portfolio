@@ -192,8 +192,9 @@ hr{
         margin: 15px;
     }
     .row-1 h1{
+			font-family: 'Caveat';
       text-align: left;
-      font-size: 50px;
+      font-size: 80px;
       margin: 0 0 5% 10%;
     }
 
