@@ -93,15 +93,13 @@ header{
 					font-family: 'Caveat';
 			    display: inline-block;
 			    font-size: 40px;
-			    margin-top: 10px;
-			    margin-left: 75px;
+					margin: 10px 0 0 75px;
 			}
 
 
 			.navbar-toggle {
 			    position: absolute;
-			    margin-top: 20px;
-					margin-right: 30px;
+					margin: 20px 30px 0 0;
 			    right: 20px;
 			    cursor: pointer;
 			    color: black;
@@ -149,8 +147,7 @@ hr{
 		.proj-head{
 			text-align: center;
 			font-size: 80px;
-			padding-top: 60px;
-			padding-bottom: 60px;
+			padding: 60px 0 60px 0;
 		}
 
     .top-row img{
@@ -165,8 +162,7 @@ hr{
   text-align: center;
   width: 6%;
   height: auto;
-  margin-top: 2%;
-  margin-left: 47%;
+	margin: 2% 0 0 47%;
 }
 	.arrow img:hover{
 	  opacity:0.5;
@@ -185,8 +181,7 @@ hr{
   }
     .row-1 {
         display: inline-block;
-        margin-bottom: 15px;
-        margin-top: 5%;
+				margin: 5% 0 15px 0;
     }
     .row-1 a{
         margin: 15px;
@@ -511,8 +506,7 @@ footer {
 	.proj-head{
 		text-align: center;
 		font-size: 45px;
-		padding-top: 60px;
-		padding-bottom: 60px;
+		padding: 60px 0 60px 0;
 	}
 
 	.proj-descrip{
@@ -547,8 +541,7 @@ footer {
 		  text-align: center;
 		  width: 20%;
 		  height: auto;
-		  margin-top: 2%;
-		  margin-left: 37%;
+			margin: 2% 0 0 37%;
 		}
 		.arrow.two img{
 		  display: none;
