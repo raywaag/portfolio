@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Portfolio > Graphics – Rachel Waag</title>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+  <header>
+
+        <!-- Nav Bar -->
+        <nav class="navbar">
+
+          <span class="navbar-toggle" id="js-navbar-toggle">
+              <i class="fas fa-bars"></i>
+          </span>
+
+            <a href="page_index.html" class="logo">Rachel Waag</a>
+            <ul class="main-nav" id="js-menu">
+                <li><a href="projects.html" class="nav-links">Projects</a></li>
+                <li><a href="graphics.html" class="nav-links">Graphics</a></li>
+                <li><a href="resume.html" class="nav-links">Resume</a></li>
+                <li><a href="contact.html" class="nav-links">Contact</a></li>
+            </ul>
+        </nav>
+
+      <hr>
+    </header>
+
+
+
+    <div class="top-row">
+         <p class="proj-head">Graphics</p>
+     </div>
+
+     <div class="arrow">
+       <a onclick="scrollWin(0, 695)"><img src="img/downarrow.png" alt="Down Arrow"></a>
+     </div>
+     <script>
+     function scrollWin(x, y) {
+       window.scrollBy(x, y);
+      }
+     </script>
+
+   <div class="projects">
+     <div class="row">
+       <div class="row-1 one">
+          <h1>Design Projects</h1>
+          <a href="b-w-composite.html"><img id="b-w" src="img/2d_option2.jpg"alt="Black and White Composites"></a>
+          <a href="snell-lab.html"><img id="snell" src="img/snell-lab.jpg"alt="The Snell Lab"></a>
+          <a href="animals.html"><img id="animals" src="img/animals.jpg"alt="Animals"></a>
+          <a href="stepucf.html"><img id="stepucf" src="img/stepucf.jpg"alt="Step at UCF"></a>
+        </div>
+        <hr class="hr-graphics">
+        <div class="row-1 one">
+        <h1>Other Graphics</h1>
+        <img id="xtra-graphics" src="img/space_to_sea.jpg"alt="Space to Sea Logo">
+        <img id="xtra-graphics" src="img/mad-paw.jpg"alt="Mad Paw Brewery">
+        <img id="xtra-graphics" src="img/total-solutions_bc.jpg"alt="Total Solutions Business Card">
+        <img id="xtra-graphics" src="img/two-whales.jpg"alt="Two Whales Brewery">
+        <img id="xtra-graphics" src="img/turkey-run.jpg"alt="Turkey Run Whiskey">
+        <img id="xtra-graphics" src="img/raywaag-design.jpg"alt="Ray Waag Design & Things">
+      </div>
+      </div>
+    </div>
+
+
+  <footer>
+    <p>Created by <br><a href="resume.html" target="_blank">Rachel Waag</a></p>
+      <a href="https://www.facebook.com/raywaagphotography/" target="_blank"><img id="facebook" src="img/facebook_icon.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/raywaagphotography/" target="_blank"><img id="insta" src="img/instagram_icon.png" alt="Instgram"></a>
+      <a href="https://www.linkedin.com/in/rachel-waag/" target="_blank"><img id="linked" src="img/linkedin_icon.png" alt="Linkedin"></a>
+    <span>Last Updated: 10/10/2018</span>
+  </footer>
+
+
+  <!--Script for collapsible nav bar-->
+    <script>
+        let mainNav = document.getElementById('js-menu');
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+
+        navBarToggle.addEventListener('click', function () {
+
+            mainNav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Portfolio > Projects > ShutterSpeed – Rachel Waag</title>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+  <header>
+        <!-- Nav Bar -->
+        <nav class="navbar">
+
+          <span class="navbar-toggle" id="js-navbar-toggle">
+              <i class="fas fa-bars"></i>
+          </span>
+
+            <a href="page_index.html" class="logo">Rachel Waag</a>
+            <ul class="main-nav" id="js-menu">
+                <li><a href="projects.html" class="nav-links">Projects</a></li>
+                <li><a href="graphics.html" class="nav-links">Graphics</a></li>
+                <li><a href="resume.html" class="nav-links">Resume</a></li>
+                <li><a href="contact.html" class="nav-links">Contact</a></li>
+            </ul>
+        </nav>
+
+      <hr>
+    </header>
+
+    <p class="proj-head">ShutterSpeed</p>
+
+<div class="proj">
+   <p class="proj-descrip"> A website to centralize connections between photographers and clients with efficiency, security and ease.
+     Designed to solve the issues in searching for photographers by clients and booking sessions by photographers. The site
+    disables the need of third-parties and essentially simplifies conception of client-photographer communication.</p>
+
+    <div class="proj-descrip role">
+      <p>My Roles</p>
+          <ul>
+            <li>Project Manager</li>
+            <li>User-Experience Research</li>
+            <li>Information Architecture</li>
+            <li>Wireframing</li>
+            <li>Mockups</li>
+            <li>Development</li>
+          </ul>
+    </div>
+  </div>
+
+
+    <div class="row-proj">
+       <img id="proj-img" src="img/shutterspeed.jpg" alt="SeaSome SaveSome Campaign">
+    <!--   <img id="proj-img" src="img/seasome_prototype.jpg" alt="SeaSome Template">
+       <img id="proj-img" src="img/seasome_app.jpg" alt="SeaSome Mockups"> -->
+     </div>
+
+
+
+   <footer>
+     <p>Created by <br><a href="resume.html" target="_blank">Rachel Waag</a></p>
+       <a href="https://www.facebook.com/raywaagphotography/" target="_blank"><img id="facebook" src="img/facebook_icon.png" alt="Facebook"></a>
+       <a href="https://www.instagram.com/raywaagphotography/" target="_blank"><img id="insta" src="img/instagram_icon.png" alt="Instgram"></a>
+       <a href="https://www.linkedin.com/in/rachel-waag/" target="_blank"><img id="linked" src="img/linkedin_icon.png" alt="Linkedin"></a>
+     <span>Last Updated: 10/10/2018</span>
+   </footer>
+
+
+  <!--Script for collapsible nav bar-->
+    <script>
+        let mainNav = document.getElementById('js-menu');
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+
+        navBarToggle.addEventListener('click', function () {
+
+            mainNav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

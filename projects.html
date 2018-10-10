@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Portfolio > Projects – Rachel Waag</title>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+  <header>
+        <!-- Nav Bar -->
+        <nav class="navbar">
+
+          <span class="navbar-toggle" id="js-navbar-toggle">
+              <i class="fas fa-bars"></i>
+          </span>
+
+            <a href="page_index.html" class="logo">Rachel Waag</a>
+            <ul class="main-nav" id="js-menu">
+                <li><a href="projects.html" class="nav-links">Projects</a></li>
+                <li><a href="graphics.html" class="nav-links">Graphics</a></li>
+                <li><a href="resume.html" class="nav-links">Resume</a></li>
+                <li><a href="contact.html" class="nav-links">Contact</a></li>
+            </ul>
+        </nav>
+
+      <hr>
+    </header>
+
+
+
+    <div class="top-row">
+         <p class="proj-head">Projects</p>
+     </div>
+
+     <div class="arrow">
+       <a onclick="scrollWin(0, 695)"><img src="img/downarrow.png" alt="Down Arrow"></a>
+     </div>
+     <script>
+     function scrollWin(x, y) {
+       window.scrollBy(x, y);
+      }
+     </script>
+
+<div class="projects">
+  <div class="row">
+    <div class="row-1 one">
+       <h1>Projects</h1>
+       <a href="safeu.html"><img id="safeu" src="img/safeu.jpg"alt="SafeU App Prototype"></a>
+       <a href="happiness-project.html"><img id="happiness-project" src="img/happiness-project.jpg"alt="The Happiness Project"></a>
+       <a href="bangsshoes.html"><img id="bangsshoes" src="img/bangsshoes.jpg"alt="BANGS Shoes"></a>
+       <a href="seasome.html"><img id="seasome" src="img/seasome.jpg"alt="SeaSome"></a>
+       <a href="shutterspeed.html"><img id="shutterspeed" src="img/shutterspeed.jpg"alt="ShutterSpeed"></a>
+     </div>
+   </div>
+ </div>
+
+
+ <footer>
+   <p>Created by <br><a href="resume.html" target="_blank">Rachel Waag</a></p>
+     <a href="https://www.facebook.com/raywaagphotography/" target="_blank"><img id="facebook" src="img/facebook_icon.png" alt="Facebook"></a>
+     <a href="https://www.instagram.com/raywaagphotography/" target="_blank"><img id="insta" src="img/instagram_icon.png" alt="Instgram"></a>
+     <a href="https://www.linkedin.com/in/rachel-waag/" target="_blank"><img id="linked" src="img/linkedin_icon.png" alt="Linkedin"></a>
+   <span>Last Updated: 10/10/2018</span>
+ </footer>
+
+
+  <!--Script for collapsible nav bar-->
+    <script>
+        let mainNav = document.getElementById('js-menu');
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+
+        navBarToggle.addEventListener('click', function () {
+
+            mainNav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
