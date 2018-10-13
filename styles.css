@@ -313,6 +313,11 @@ hr{
 			width:25%;
 			height: auto;
 		}
+		.proj-port-img{
+			width: 60%;
+			height: auto;
+			padding: 1%;
+		}
 
     .row-1 #ux:hover {
     content: url("img/seasome_prototype_hover.jpg");
@@ -611,7 +616,7 @@ footer {
 				display: block;
 				width: 100%;
 				height: auto;
-				content: url("img/model-port_hover.jpg");	
+				content: url("img/model-port_hover.jpg");
 			}
 			#safeu{
 				display: block;
@@ -644,6 +649,11 @@ footer {
 				content: url("img/shutterspeed_hover.jpg");
 			}
 			.proj-img{
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+			.proj-port-img{
 				display: block;
 				width: 100%;
 				height: auto;
