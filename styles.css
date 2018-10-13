@@ -285,6 +285,10 @@ hr{
 		}
 
 
+		#model-port{
+			width:25%;
+			height: auto;
+		}
 		#safeu{
 			width:25%;
 			height: auto;
@@ -338,6 +342,9 @@ hr{
 			margin-bottom: 5%;
 		}
 
+		.row-1 #model-port:hover{
+		content: url("img/model-port_hover.jpg");
+		}
 		.row-1 #safeu:hover {
 		content: url("img/safeu_hover.jpg");
 		}
@@ -600,7 +607,12 @@ footer {
 				height: auto;
 				content: url("img/stepucf_hover.jpg");
 			}
-
+			#model-port{
+				display: block;
+				width: 100%;
+				height: auto;
+				content: url("img/model-port_hover.jpg");	
+			}
 			#safeu{
 				display: block;
 				width: 100%;
