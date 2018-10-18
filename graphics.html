@@ -8,22 +8,11 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="styles.css">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127410378-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-127410378-1');
-</script>
-
+<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 
   <header>
-
         <!-- Nav Bar -->
         <nav class="navbar">
 
@@ -39,55 +28,112 @@
                 <li><a href="contact.html" class="nav-links">Contact</a></li>
             </ul>
         </nav>
-
-      <hr>
+        <hr class="nav-hr">
     </header>
 
 
+    <div class="container">
 
-    <div class="top-row">
-         <p class="proj-head">Graphics</p>
-     </div>
-
-     <div class="arrow">
-       <a onclick="scrollWin(0, 695)"><img src="img/downarrow.png" alt="Down Arrow"></a>
-     </div>
-     <script>
-     function scrollWin(x, y) {
-       window.scrollBy(x, y);
-      }
-     </script>
-
-   <div class="projects">
-     <div class="row">
-       <div class="row-1 one">
-          <h1>Design Projects</h1>
-          <a href="b-w-composite.html"><img id="b-w" src="img/2d_option2.jpg" alt="Black and White Composites"></a>
-          <a href="snell-lab.html"><img id="snell" src="img/snell-lab.jpg" alt="The Snell Lab"></a>
-          <a href="animals.html"><img id="animals" src="img/animals.jpg" alt="Animals"></a>
-          <a href="stepucf.html"><img id="stepucf" src="img/stepucf.jpg" alt="Step at UCF"></a>
+      <div class="row">
+        <div class="col-12">
+             <p class="proj-head">Graphics</p>
         </div>
-        <hr class="hr-graphics">
-        <div class="row-1 one">
-        <h1>Other Graphics</h1>
-        <img class="proj-img" src="img/space_to_sea.jpg" alt="Space to Sea Logo">
-        <img class="proj-img" src="img/mad-paw.jpg" alt="Mad Paw Brewery">
-        <img class="proj-img" src="img/total-solutions_bc.jpg" alt="Total Solutions Business Card">
-        <img class="proj-img" src="img/two-whales.jpg" alt="Two Whales Brewery">
-        <img class="proj-img" src="img/turkey-run.jpg" alt="Turkey Run Whiskey">
-        <img class="proj-img" src="img/raywaag-design.jpg" alt="Ray Waag Design & Things">
       </div>
+      <h1 class="graphic-head">Projects</h1>
+      <div class="row" id="work">
+          <div class="col-5">
+              <ul>
+                <li>
+                  <a href="snell-lab.html">
+                    <img class="proj-img" src="img/snell-lab.jpg" alt="The Snell Lab">
+                  </a>
+                  <figcaption>The Snell Lab</figcaption>
+                </li>
+              </ul>
+            </div>
+          <div class="col-5">
+                  <ul>
+                    <li>
+                      <a href="animals.html">
+                        <img class="proj-img" src="img/animals.jpg" alt="Animals">
+                      </a>
+                      <figcaption>Animals</figcaption>
+                    </li>
+                  </ul>
+                </div>
+            <div class="col-5">
+                <ul>
+                  <li>
+                    <a href="stepucf.html">
+                      <img class="proj-img" src="img/stepucf.jpg" alt="Step at UCF">
+                    </a>
+                    <figcaption>STEP @ UCF</figcaption>
+                  </li>
+                </ul>
+              </div>
+          </div>
+          <hr class="graphics">
+          <div class="row" id="work">
+              <div class="col-5">
+                  <ul>
+                    <li>
+                        <img class="proj-img" src="img/space_to_sea.jpg" alt="Space to Sea Logo">
+                    </li>
+                  </ul>
+                </div>
+              <div class="col-5">
+                  <ul>
+                    <li>
+                        <img class="proj-img" src="img/mad-paw.jpg" alt="Mad Paw Brewery">
+                    </li>
+                  </ul>
+                </div>
+              <div class="col-5">
+                  <ul>
+                    <li>
+                        <img class="proj-img" src="img/total-solutions_bc.jpg" alt="Total Solutions Business Card">
+                    </li>
+                  </ul>
+                </div>
+              <div class="col-5">
+                  <ul>
+                    <li>
+                        <img class="proj-img" src="img/two-whales.jpg" alt="Two Whales Brewery">
+                    </li>
+                  </ul>
+                </div>
+              <div class="col-5">
+                  <ul>
+                    <li>
+                        <img class="proj-img" src="img/turkey-run.jpg" alt="Turkey Run Whiskey">
+                    </li>
+                  </ul>
+                </div>
+              <div class="col-5">
+                  <ul>
+                    <li>
+                        <img class="proj-img" src="img/raywaag-design.jpg" alt="Ray Waag Design & Things">
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+  </div>
+
+
+  <footer>
+    <div class="row">
+      <div class="col-6">
+        <p>Designed & Coded by <br><a href="resume.html" target="_blank">Rachel Waag</a></p>
+        <p>Last Updated: 10/10/2018</p>
+     </div>
+     <div class="col-6">
+        <a href="https://www.facebook.com/raywaagphotography/" target="_blank"><img class="social" src="img/facebook_icon.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/raywaagphotography/" target="_blank"><img class="social" src="img/instagram_icon.png" alt="Instgram"></a>
+        <a href="https://www.linkedin.com/in/rachel-waag/" target="_blank"><img class="social" src="img/linkedin_icon.png" alt="Linkedin"></a>
       </div>
     </div>
-
-
-    <footer>
-      <p>Designed & Coded by <br><a href="resume.html" target="_blank">Rachel Waag</a></p>
-        <a href="https://www.facebook.com/raywaagphotography/" target="_blank"><img id="facebook" src="img/facebook_icon.png" alt="Facebook"></a>
-        <a href="https://www.instagram.com/raywaagphotography/" target="_blank"><img id="insta" src="img/instagram_icon.png" alt="Instgram"></a>
-        <a href="https://www.linkedin.com/in/rachel-waag/" target="_blank"><img id="linked" src="img/linkedin_icon.png" alt="Linkedin"></a>
-      <span>Last Updated: 10/10/2018</span>
-    </footer>
+  </footer>
 
 
   <!--Script for collapsible nav bar-->

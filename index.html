@@ -8,17 +8,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="styles.css">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127410378-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-127410378-1');
-</script>
-
+<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 
@@ -38,67 +28,110 @@
                 <li><a href="contact.html" class="nav-links">Contact</a></li>
             </ul>
         </nav>
-
-      <hr>
+        <hr class="nav-hr">
     </header>
 
 
+    <div class="container">
 
-    <div class="top-row">
-      <img src="img/DSC_0480.jpg" alt="Rachel Waag (me)">
-         <p class="bio">Professionally and educationally influencing change through design,
-           development and photography since 2015 specializing in UX design, web development and graphic design.</p>
-     </div>
+      <div class="row">
+        <div class="col-6">
+          <img id="bio" src="img/DSC_0480.jpg" alt="Rachel Waag (me)">
+        </div>
+        <div class="col-6">
+             <p class="bio">Professionally and educationally influencing change through design,
+               development and photography since 2015 specializing in UX design, web development and graphic design.
+            </p>
+        </div>
+      </div>
 
-     <div class="arrow">
-       <a onclick="scrollWin(0, 720)"><img src="img/downarrow.png" alt="Down Arrow"></a>
-     </div>
-     <script>
-     function scrollWin(x, y) {
-       window.scrollBy(x, y);
-      }
-     </script>
-
-  <div class="row">
-    <div class="row-1">
-       <h1>Work</h1>
-       <a href="projects.html"><img id="ux" src="img/seasome_prototype.jpg" alt="UX/UI"></a>
-       <a href="graphics.html"><img id="graphics" src="img/bluebeetle.png" alt="Graphics"></a>
-       <a href="https://www.flickr.com/photos/rachelwaag/albums/" target="_blank"><img id="photo" src="img/photo.jpg" alt="Photography"></a>
-     </div>
-   </div>
-
-   <div class="arrow two">
-     <a onclick="scrollWin(0, 720)"><img src="img/downarrow.png" alt="Down Arrow"></a>
-   </div>
+      <div class="arrow">
+        <a onclick="scrollWin(0, 700)"><img src="img/downarrow.png" alt="Down Arrow"></a>
+      </div>
+      <script>
+      function scrollWin(x, y) {
+        window.scrollBy(x, y);
+       }
+      </script>
 
 
-<div class="contact-me">
-     <p class="tb-title">Get in touch</p>
-   <table>
-     <tr>
-       <th>Phone:</th>
-       <td>(727)-804-2818</td>
-     </tr>
-     <tr>
-       <th>Email:</th>
-       <td>raywaag@gmail.com</td>
-     </tr>
-     <tr>
-       <th>Location:</th>
-       <td>Orlando, FL</td>
-     </tr>
-   </table>
- </div>
+    <div class="row" id="work">
+        <h1>Work</h1>
+        <div class="col-5">
+            <ul>
+              <li>
+                <a href="projects.html">
+                  <img class="proj-img" src="img/seasome_prototype.jpg" alt="UX/UI">
+                </a>
+                <figcaption>Projects</figcaption>
+              </li>
+            </ul>
+          </div>
+        <div class="col-5">
+            <ul>
+              <li>
+                <a href="graphics.html">
+                  <img class="proj-img" src="img/bluebeetle.png" alt="Graphics">
+                </a>
+                <figcaption>Graphics</figcaption>
+              </li>
+            </ul>
+          </div>
+        <div class="col-5">
+                <ul>
+                  <li>
+                    <a href="https://www.flickr.com/photos/rachelwaag/albums/" target="_blank">
+                      <img class="proj-img" src="img/photo.jpg" alt="Photography">
+                    </a>
+                    <figcaption>Photography</figcaption>
+                  </li>
+                </ul>
+              </div>
+        </div>
 
 
- <footer>
-   <p>Designed & Coded by <br><a href="resume.html" target="_blank">Rachel Waag</a></p>
-     <a href="https://www.facebook.com/raywaagphotography/" target="_blank"><img id="facebook" src="img/facebook_icon.png" alt="Facebook"></a>
-     <a href="https://www.instagram.com/raywaagphotography/" target="_blank"><img id="insta" src="img/instagram_icon.png" alt="Instgram"></a>
-     <a href="https://www.linkedin.com/in/rachel-waag/" target="_blank"><img id="linked" src="img/linkedin_icon.png" alt="Linkedin"></a>
-   <span>Last Updated: 10/10/2018</span>
- </footer>
+      <div class="arrow">
+        <a onclick="scrollWin(0, 700)"><img src="img/downarrow.png" alt="Down Arrow"></a>
+      </div>
+
+
+        <div class="row">
+          <div class="col-12">
+            <div class="contact-me">
+            <h2>Get in touch</h2>
+          <table>
+            <tr>
+              <th>Phone:</th>
+              <td>(727)-804-2818</td>
+            </tr>
+            <tr>
+              <th>Email:</th>
+              <td>raywaag@gmail.com</td>
+            </tr>
+            <tr>
+              <th>Location:</th>
+              <td>Orlando, FL</td>
+            </tr>
+          </table>
+          </div>
+        </div>
+    </div>
+
+    </div>
+
+    <footer>
+      <div class="row">
+        <div class="col-6">
+          <p>Designed & Coded by <br><a href="resume.html" target="_blank">Rachel Waag</a></p>
+          <p>Last Updated: 10/10/2018</p>
+       </div>
+       <div class="col-6">
+          <a href="https://www.facebook.com/raywaagphotography/" target="_blank"><img class="social" src="img/facebook_icon.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com/raywaagphotography/" target="_blank"><img class="social" src="img/instagram_icon.png" alt="Instgram"></a>
+          <a href="https://www.linkedin.com/in/rachel-waag/" target="_blank"><img class="social" src="img/linkedin_icon.png" alt="Linkedin"></a>
+        </div>
+      </div>
+    </footer>
 
 
   <!--Script for collapsible nav bar-->
