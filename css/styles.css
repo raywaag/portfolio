@@ -403,6 +403,10 @@ h1{
 		text-align: center;
 		margin-left: -9%;
 	}
+		.row.outline{
+			background-color: #ECF1F2;
+			padding: 3%;
+		}
 
 		.bio{
 			color: #ffffff;
@@ -530,9 +534,10 @@ h2.port-head{
 		margin: 0 0 5% 0;
 	}
 			h3.title{
+				font-family: 'Crimson Text', serif;
 				text-align: center;
-				color: grey;
-				font-size: 45px;
+				color: black;
+				font-size: 30px;
 				margin-bottom: 2%;
 			}
 			h3 span{
@@ -543,6 +548,12 @@ h2.port-head{
 				font-size: 30px;
 				text-decoration: none;
 			}
+.proj-des{
+	text-align: left;
+}
+		.proj-des ul{
+			text-decoration: inherit;
+		}
 	.row.project h3{
 		margin: 5% 0 5% 0;
 	}
@@ -621,6 +632,9 @@ h5{
 				width: 8%;
 				height: auto;
 				margin: 2% 5% 0 0;
+			}
+			.social:hover{
+				opacity: 0.5;
 			}
 
 
