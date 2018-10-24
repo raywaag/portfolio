@@ -553,10 +553,19 @@ h2.port-head{
 			}
 .proj-des{
 	text-align: left;
+	font-family: 'Crimson Text', serif;
+	color: #99aeb1;
+	font-size: 25px;
+	margin-bottom: 2%;
 }
-		.proj-des ul{
-			text-decoration: inherit;
+		.proj-des-center{
+			text-align: center;
+			font-family: 'Crimson Text', serif;
+			color: #99aeb1;
+			font-size: 25px;
+			margin-bottom: 2%;
 		}
+
 	.row.project h3{
 		margin: 5% 0 5% 0;
 	}
