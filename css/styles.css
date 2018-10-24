@@ -677,8 +677,11 @@ h5{
 	}
 
 	hr{
-		margin: 20% 15% 20% 15%;
+		display: none;
 	}
+		.contact-hr{
+			display: block;
+		}
 	.graphic-head{
 		display: block;
 	}
@@ -725,6 +728,10 @@ h5{
 			font-size: 40px;
 		}
 
+.res-title{
+	font-size: 40px;
+	margin-top: 10%;
+}
 
 .contact-me{
 	text-align: center;
