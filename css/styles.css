@@ -476,6 +476,9 @@ h2.port-head{
 	text-align: center;
 	margin: 5% 0 5% 0;
 }
+ .res-title{
+	 font-size:50px;
+ }
 #bio{
 	width: 65%;
 	height: auto;
