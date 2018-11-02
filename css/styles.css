@@ -469,6 +469,14 @@ h1{
 	width: 50%;
 	height: auto;
 }
+		.proj-img-static.site{
+			width: 80%;
+			height: auto;
+		}
+		.proj-img-static.expand{
+			width: 100%;
+			height: auto;
+		}
 
 h2.port-head{
 	font-family: 'Crimson Text', serif;
