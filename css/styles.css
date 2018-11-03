@@ -557,7 +557,6 @@ h2.port-head{
 			h3 a{
 				color: #434343;
 				font-size: 30px;
-				text-decoration: none;
 			}
 .proj-des{
 	text-align: left;
@@ -573,6 +572,17 @@ h2.port-head{
 			font-size: 25px;
 			margin-bottom: 2%;
 		}
+	.proj-link-center{
+		text-align: center;
+		font-family: 'Crimson Text', serif;
+		color: black;
+		font-size: 25px;
+		margin-bottom: 2%;
+	}
+	.proj-link-center a{
+		color: #99aeb1;
+		font-size: 25px;
+	}
 
 	.row.project h3{
 		margin: 5% 0 5% 0;
