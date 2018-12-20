@@ -1,164 +1,311 @@
-<!DOCTYPE HTML>
-<html lang="en">
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127410378-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-127410378-1');
-  </script>
-
-
-<title>Portfolio > Home – Rachel Waag</title>
-<meta charset="utf-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Caveat%7CComfortaa%7CCrimson+Text%7CJulius+Sans+One%7CRaleway" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/styles.css">
-<link rel="icon" type="image/png" href="img/RW.png" />
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rachel Waag | Portfolio</title>
+  	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
+
 <body>
-
-  <header>
-        <!-- Nav Bar -->
-        <nav class="navbar">
-
-          <span class="navbar-toggle" id="js-navbar-toggle">
-              <i class="fas fa-bars"></i>
-          </span>
-
-            <a href="index.html" class="logo">Rachel Waag</a>
-            <ul class="main-nav" id="js-menu">
-                <li><a href="projects.html" class="nav-links">UX Projects</a></li>
-                <li><a href="graphics.html" class="nav-links">Graphics</a></li>
-                <li><a href="resume.html" class="nav-links">Resume</a></li>
-                <li><a href="contact.html" class="nav-links">Contact</a></li>
-            </ul>
-        </nav>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">My Work</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
     </header>
+    <!-- End header -->
 
-
-    <div class="container">
-
-      <div class="row bio">
-          <div class="col-12">
-               <p class="bio"><span>UX RESEARCH. DESIGN. DEVELOP.</span><br>
-                 Professionally and educationally influencing change through UX design,
-                 web development and photography.
-              </p>
-          </div>
-      </div>
-
-
-      <div class="arrow">
-        <a onclick="scrollWin(0, 700)"><img src="img/downarrow.png" alt="Down Arrow"></a>
-      </div>
-      <script>
-      function scrollWin(x, y) {
-        window.scrollBy(x, y);
-       }
-      </script>
-
-
-    <div class="row" id="work">
-        <h1>Work</h1>
-        <div class="col-5">
-            <ul>
-              <li>
-                <figure>
-                <a href="projects.html">
-                  <img class="proj-img" src="img/happiness-project.jpg" alt="UX/UI">
-                </a>
-                <figcaption>UX / UI</figcaption>
-                </figure>
-              </li>
-            </ul>
-          </div>
-        <div class="col-5">
-            <ul>
-              <li>
-                <figure>
-                <a href="graphics.html">
-                  <img class="proj-img" src="img/bluebeetle.png" alt="Graphics">
-                </a>
-                <figcaption>Graphics</figcaption>
-                </figure>
-              </li>
-            </ul>
-          </div>
-        <div class="col-5">
-                <ul>
-                  <li>
-                    <figure>
-                    <a href="https://www.flickr.com/photos/rachelwaag/albums/" target="_blank">
-                      <img class="proj-img" src="img/photo.jpg" alt="Photography">
-                    </a>
-                    <figcaption>Photography</figcaption>
-                    </figure>
-                  </li>
-                </ul>
-              </div>
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Rachel Waag</h1>
+            <h2>UX Research. Design. Develop.</h2>
+            <a href="images/rachelwaag_resume.pdf" download class="btn-rounded-white" target="_blank">Download Resume</a>
         </div>
+        <!-- End #lead-content -->
 
+        <div id="lead-overlay"></div>
 
-      <div class="arrow">
-        <a onclick="scrollWin(0, 700)"><img src="img/downarrow.png" alt="Down Arrow"></a>
-      </div>
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
 
-<hr class="contact-hr">
-        <div class="row">
-          <div class="col-12">
-            <div class="contact-me">
-            <h1>Get in touch</h1>
-          <table>
-            <tr>
-              <th>Phone:</th>
-              <td>(727)-804-2818</td>
-            </tr>
-            <tr>
-              <th>Email:</th>
-              <td>raywaag@gmail.com</td>
-            </tr>
-            <tr>
-              <th>Location:</th>
-              <td>Orlando, FL</td>
-            </tr>
-          </table>
-          </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      I professionally and educationally influence change through UX design,
+                      web development and photography. I strive to be an endless learner, using my newfound knowledge to
+                      develop new frontiers of the future. Technology has an outstanding impact on the world and its inhabitants. I work to make this impact
+                      powerfully efficient, effective, beneficial and enjoyable.
+                    </p>
+                    <br>
+                    <p>
+                      The rest of my interests are vested to <a href="https://www.flickr.com/photos/rachelwaag/albums" target="_blank">photography</a> and my dog.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
+    <!-- End #about -->
 
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="October 2018 – Present">
+                <h3>Colotek</h3>
+                <h4>UX Designer</h4>
+                <p>
+                  Gather and evaluate user requirements, in collaboration with project managers and developers. As well as illustrate design ideas using storyboards, process flows and sitemaps via Adobe XD to design graphic user interface elements, assets and widget for the final interactive prototype.
+                </p>
+            </div>
+
+            <div data-date="April 2018 – Present">
+                <h3>BANGS Shoes</h3>
+                <h4>Web Develpoer - Intern</h4>
+                <p>
+                  Remaster company website identical to the BANGS Corporate Identity (CI) and conform a consistent, up to date experience. As well as assist with photography and photo editing via Lightroom and monthly GWPs via Shopify.
+                </p>
+            </div>
+
+            <div data-date="July 2014 – Present">
+                <h3>Ray Waag Photography</h3>
+                <h4>Freelance Photographer</h4>
+                <p>
+                  Capture memories for families, graduates, newly-weds, engagements, pets, commissions and professional models; as well as work collaboratively to create interpretational photographic arts.
+                </p>
+            </div>
+
+            <div data-date="Fall 2016 - Spring 2017 ">
+                <h3>UCF Restores</h3>
+                <h4>HCI Researcher</h4>
+                <p>
+                  Assisted with Human-Computer Interaction (HCI) research for iPad application Pegasys by debugging and analyzed the effectiveness of the app to treat extreme childhood shyness in elementary children.
+                </p>
+            </div>
+
+            <div data-date="Fall 2016 - Spring 2017 ">
+                <h3>UCF Psychology Clinic</h3>
+                <h4>PTSD Session Decoder</h4>
+                <p>
+                  Coded past and present war simulations with veterans suffering from PTSD (Post-Traumatic Stress Disorder) under supervision of Dr. Deborah C. Beidel at the University of Central Florida Psychology Clinic.
+                </p>
+            </div>
+
+            <div data-date="July 2015 – May 2016">
+                <h3>PARC - St. Petersburg, FL</h3>
+                <h4>Graphic Designer</h4>
+                <p>
+                  Designed "Inspired Artist Studios at PARC" logo and graphics, as well as provided photography for the non-profit organization PARC whose mission is to assist those with developmental and intellectual disabilities.
+                </p>
+            </div>
+        </div>
     </div>
+    <!-- End #experience -->
+
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>University of Central Florida</h3>
+            <span class="education-date">January 2015 - December 2019</span>
+            <h4>Bachelors of Arts in Web Development</h4>
+            <p>
+                The methods, tools and technologies needed to successfully develop and design UX tasks, mobile applications, websites as well as server-side scripting (back-end development) and client-side scripting (front-end development) in individual and team environments.
+            </p>
+        </div>
+        <!-- End .education-block -->
+
+        <div class="education-block">
+            <h3>University of Central Florida</h3>
+            <span class="education-date">January 2015 - December 2019</span>
+            <h4>Minor of Science in Human Factors Psychology</h4>
+            <p>
+              The human factors exposed in human-computer interactions including the methodology of User-Centered Design, Cognitive Psychology and Neuropsychology.
+            </p>
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">The Works</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/pwp_mockups.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Paws with a Purpose</h3>
+                        <p>
+                          Second place Adobe winner, an iOS mobile app bettering the connection between veterans and their fur-ever companion.
+                        </p>
+                        <a href="paws-with-a-purpose.html">Show me more!</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/shutterspeed_mockup.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>ShutterSpeed</h3>
+                        <p>
+                          Photographer-Client communication made easy. Find the best photographer in YOUR area within YOUR budget suitable to YOUR needs. Created by photographers, for photographers.
+                        </p>
+                        <a href="shutterspeed.html">Let's see it!</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/p-c-casting.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Paws & Claws Casting</h3>
+                        <p>
+                          Hollywood's four-legged (or feathered) stars. A networking site for out of work animal actors.
+                        </p>
+                        <a href="pc-casting.html">Take me to the animals!</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/happiness-project.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>The Happiness Project</h3>
+                        <p>
+                          A site sanctuary to seek light when down, hopeless or in the dark. Also, a great alternative to boredom.
+                        </p>
+                        <a href="happiness-project.html" target="_blank">I could use some happiness...</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="skills">
+        <h2 class="heading">Tool Box</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>Adobe XD</li>
+            <li>SCSS</li>
+            <li>Xcode</li>
+            <li>Wireframing</li>
+            <li>Atom</li>
+            <li>Swift</li>
+            <li>WordPress</li>
+            <li>Prototyping</li>
+            <li>Information Architecture</li>
+            <li>Project Management</li>
+            <li>Adobe Photoshop</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="contact">
+        <div id="contact-form">
+                <button><a href="mailto:raywaag@gmail.com">Send me a message</a></button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
 
     <footer>
-      <div class="row">
-        <div class="col-6">
-          <p>Designed & Coded by <br><a href="resume.html" target="_blank">Rachel Waag</a></p>
-          <p>Last Updated: 10/10/2018</p>
-       </div>
-       <div class="col-6">
-          <a href="https://www.facebook.com/raywaagphotography/" target="_blank"><img class="social" src="img/facebook_icon.png" alt="Facebook"></a>
-          <a href="https://www.instagram.com/raywaagphotography/" target="_blank"><img class="social" src="img/instagram_icon.png" alt="Instgram"></a>
-          <a href="https://www.linkedin.com/in/rachel-waag/" target="_blank"><img class="social" src="img/linkedin_icon.png" alt="Linkedin"></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2018 Rachel Waag
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/raywaag" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/raywaagphotography/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/rachel-waag" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/raywaagphotography/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </footer>
+    <!-- End footer -->
 
-
-  <!--Script for collapsible nav bar-->
-    <script>
-        let mainNav = document.getElementById('js-menu');
-        let navBarToggle = document.getElementById('js-navbar-toggle');
-
-        navBarToggle.addEventListener('click', function () {
-
-            mainNav.classList.toggle('active');
-        });
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
 </body>
+
 </html>
