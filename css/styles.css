@@ -856,7 +856,8 @@ footer {
     float: none;
   }
   .project-image {
-    display: none;
+    display: block;
+    margin: 20px auto 0 25px;
   }
   .project-info {
     position: relative;
