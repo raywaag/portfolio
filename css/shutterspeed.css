@@ -6,6 +6,14 @@ body.active {
   overflow: hidden;
   z-index: -1;
 }
+
+.significant {
+  color: #769EB5;
+}
+.left {
+  text-align: left;
+}
+
 @keyframes dropHeader {
   0% {
     transform: translateY(-100%);
