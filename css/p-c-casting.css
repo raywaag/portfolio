@@ -9,6 +9,14 @@ body.active {
   overflow: hidden;
   z-index: -1;
 }
+
+.significant {
+  font-weight: bold;
+}
+.left{
+  text-align: left;
+}
+
 @keyframes dropHeader {
   0% {
     transform: translateY(-100%);
@@ -301,6 +309,9 @@ img{
   color: #000;
   margin: 0;
 }
+#about ul{
+  font-family: 'Raleway', sans-serif;
+}
 /*
  -------------------------------
  ----- 7. design Styles -----
@@ -335,7 +346,9 @@ img{
 #more-development {
   display: none;
 }
-
+#development ul{
+  font-family: 'Raleway', sans-serif;
+}
 /*
  -------------------------------
  ----- 9. roles Styles -----
