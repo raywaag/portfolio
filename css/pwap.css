@@ -313,6 +313,9 @@ img{
   max-width: 100%;
   height: auto;
 }
+#design ul {
+  text-align: left;
+}
 /*
  ---------------------------
  ----- 5. Research Styles -----
