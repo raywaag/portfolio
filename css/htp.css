@@ -10,6 +10,14 @@ body.active {
   overflow: hidden;
   z-index: -1;
 }
+
+.significant {
+  color:#5B9199;
+}
+.left {
+  text-align: left;
+}
+
 @keyframes dropHeader {
   0% {
     transform: translateY(-100%);
@@ -293,6 +301,9 @@ img{
 #about p {
   margin: 0;
 }
+#about ul {
+  font-family: 'Open Sans', sans-serif;
+}
 /*
  -------------------------------
  ----- 7. design Styles -----
@@ -326,6 +337,9 @@ img{
 }
 #more-development {
   display: none;
+}
+#development ul {
+  font-family: 'Open Sans', sans-serif;
 }
 .btn-rounded-navy {
   display: inline-block;
