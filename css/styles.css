@@ -1,33 +1,3 @@
-/*
- File Contents:
- 1. Variables
- 2. Mixins
- 3. Global Styles
- 4. Lead Styles
- 5. About Styles
- 6. Experience Styles
- 7. Education Styles
- 8. Project Styles
- 9. Skills Styles
- 10. Contact Styles
- 11. Optional Section Styles
- 12. Media Queries
- */
-/*
- ------------------------
- ----- 1. Variables -----
- ------------------------
- */
-/*
- ---------------------
- ----- 2. Mixins -----
- ---------------------
- */
-/*
- ----------------------------
- ----- 3. Global Styles -----
- ----------------------------
- */
 body {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
@@ -97,7 +67,7 @@ header li {
 }
 header a {
   display: block;
-  color: #269b9b;
+  color: #5abde2;
   padding: 10px;
 }
 header a:hover {
@@ -275,7 +245,7 @@ footer {
   line-height: 0.9em;
 }
 #lead-content h2 {
-  color: #269b9b;
+  color: #5abde2;
   font-weight: 500;
   font-size: 2.25em;
   margin-bottom: 15px;
@@ -370,7 +340,7 @@ footer {
   right: auto;
   height: 100%;
   width: 3px;
-  background: #269b9b;
+  background: #5abde2;
   z-index: 0;
 }
 #experience-timeline:after {
@@ -378,8 +348,8 @@ footer {
   content: '';
   width: 3px;
   height: 40px;
-  background: #269b9b;
-  background: linear-gradient(to bottom, #269b9b, rgba(83, 112, 115, 0));
+  background: #5abde2;
+  background: linear-gradient(to bottom, #5abde2, rgba(83, 112, 115, 0));
   top: 100%;
   left: 303px;
 }
@@ -420,7 +390,7 @@ footer {
   color: #fff;
   width: 50px;
   height: 50px;
-  background: #269b9b;
+  background: #5abde2;
   border-radius: 50%;
   float: left;
   z-index: 99;
@@ -520,7 +490,7 @@ footer {
   padding: 15px;
 }
 .project-info a{
-  color: #269b9b;
+  color: #5abde2;
 }
 .project-info a:hover{
   color: #313131;
@@ -588,7 +558,7 @@ footer {
 }
 #contact h2 {
   margin: 0 0 15px 0;
-  color: #269b9b;
+  color: #5abde2;
   font-weight: 500;
 }
 #contact-form {
