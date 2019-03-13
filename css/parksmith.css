@@ -1,9 +1,9 @@
 body {
-  font-family: 'Cinzel', serif;
+  font-family: 'Lora', serif;
   font-size: 16px;
 }
 p {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 body.active {
   overflow: hidden;
@@ -50,7 +50,7 @@ header li {
   display: inline-block;
 }
 header li.thick{
-  background: #bddde3;
+  background: #80deea;
   border-radius: 4px;
 }
 header a {
@@ -311,6 +311,11 @@ img{
 }
 #about ul{
   font-family: 'Raleway', sans-serif;
+}
+#about img{
+  text-align: center;
+  max-width: 100%;
+  height: auto;
 }
 /*
  -------------------------------
