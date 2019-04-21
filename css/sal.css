@@ -62,6 +62,7 @@ header a {
   display: block;
   color: #404B51;
   padding: 10px;
+  transition: 0.3s;
 }
 header a:hover {
   color: #404B51;

@@ -491,6 +491,7 @@ footer {
 }
 .project-info a{
   color: #5abde2;
+  transition: 0.3s;
 }
 .project-info a:hover{
   color: #313131;

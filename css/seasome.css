@@ -53,13 +53,14 @@ header li {
   display: inline-block;
 }
 header li.thick{
-  background: #eee;
+  background: #d8e8f0;
   border-radius: 4px;
 }
 header a {
   display: block;
   color:#008080;;
   padding: 10px;
+  transition: 0.3s;
 }
 header a:hover {
   color: #404B51;

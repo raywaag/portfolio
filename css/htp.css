@@ -59,6 +59,7 @@ header a {
   display: block;
   color: #03576B;
   padding: 10px;
+  transition: 0.3s;
 }
 header a:hover {
   color: #404B51;

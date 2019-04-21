@@ -57,13 +57,14 @@ header li {
   padding-top:5px;
 }
 header li.thick{
-  background: #eee;
-  border-radius: 4px;
+  color: #404B51;
+  font-weight:700;
 }
 header a {
   display: block;
-  color:#FFCA06;;
+  color:#FFCA06;
   padding: 10px;
+  transition: 0.3s;
 }
 header a:hover {
   color: #FFCA06;
