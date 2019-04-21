@@ -1,7 +1,8 @@
-@import "../libs/fonts/gotham/style.css";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900');
 
 body {
-  font-family: 'Gotham Bold';
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   font-size: 16px;
 }
 body.active {
@@ -11,16 +12,16 @@ body.active {
 
 .significant {
   color: #FFCA06;
-  font-weight: 600;
+  font-weight: 500;
 }
 .left {
   text-align: left;
 }
 p{
-  font-family: 'Gotham Book';
+  font-weight: 400;
 }
 ul{
-  font-family: 'Gotham Book';
+  font-weight: 400;
 }
 @keyframes dropHeader {
   0% {
@@ -204,7 +205,7 @@ footer {
   position: relative;
   display: inline-block;
   font-size: 2em;
-  font-weight: 300;
+  font-weight: 700;
   margin: 0 0 30px 0;
 }
 .heading:after {
@@ -271,7 +272,7 @@ img{
   font-size: 2.00em;
   margin-top: 25px;
   margin-bottom: 15px;
-  font-family: 'Gotham Book';
+  font-weight: 400;
 }
 #lead-down {
   position: absolute;
