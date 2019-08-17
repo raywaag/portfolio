@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-127410378-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-127410378-1");
+    </script>
+
+    <title>Rachel Waag | Flight2Landing</title>
+
+    <link rel="icon" href="images/rw.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Staatliches"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/f2l.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="mobile-menu-open" class="shadow-large">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+      <div id="mobile-menu-close">
+        <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <ul id="menu" class="shadow">
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#roles">Roles</a>
+        </li>
+        <li>
+          <a href="#research">The Mud</a>
+        </li>
+        <li>
+          <a href="#design">Re-Design</a>
+        </li>
+        <li class="thick">
+          <a class="no-scroll" href="index.html">HOME</a>
+        </li>
+      </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+      <div id="lead-content">
+        <h1>Flight2Landing</h1>
+        <h2>Techies, we need you.</h2>
+        <a
+          href="https://raywaag.github.io/seasome/"
+          class="btn-rounded-teal"
+          target="_blank"
+          >View Site</a
+        >
+      </div>
+      <!-- End #lead-content -->
+      <div id="lead-overlay"></div>
+      <div id="lead-down">
+        <span>
+          <i
+            style="color:#fff"
+            class="fa fa-chevron-down"
+            aria-hidden="true"
+          ></i>
+        </span>
+      </div>
+      <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2 class="heading">About</h2>
+          </div>
+          <div class="col-md-8">
+            <p>
+              Flight2Landing was an..interesting project. I came into as the
+              Lead UX Designer mid-way. I wasn't involved in the initial
+              architecture, the market matrix comps, the style guide - or the
+              lack there of.
+              <br />
+              <br />
+              This posed as a pretty imediate issue. After trying to salvage
+              what had already been mocked and iteratively developed, a complete
+              overhaul was the ultimate solution. This included backtracking to
+              meet proper UX navigability, A11Y accessible practices, data
+              visualization, brand change and a concrete style guide.
+              <br />
+              <br />
+              We also had a pretty steady in-and-out of interns and workers.
+              This made for inconsistent workflows and, again, a timely detail.
+              Alas, here we go.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End #about -->
+
+    <hr />
+
+    <div id="roles">
+      <div class="container">
+        <h2 class="heading">My Roles</h2>
+        <ul>
+          <li>Lead UX Designer</li>
+          <li>Secondary Information Architect</li>
+          <li>UX Engineer</li>
+        </ul>
+      </div>
+    </div>
+    <!-- End #roles -->
+
+    <hr />
+    <div id="research">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2 class="heading">The Mud</h2>
+          </div>
+          <div class="col-md-8">
+            <p>
+              I call this section 'The Mud' because that's what it felt like to
+              trudge through the mess of the current architecture and turn
+              around to explain to the stakeholders why these worked. But, they
+              didn't. This ultimately caught us in a bind and it was time to
+              time-travel beyond the last few months of work.
+              <br /><br />
+              This cost money, time and confidence. <i>This</i> is one of the
+              many reasons why proper UX design is important. Emphasis on the
+              UX.
+            </p>
+            <br /><br />
+            <img alt="Initial Designs" src="images/og-f2l-designs.jpg" />
+            <br /><br />
+            <p>
+              Above are a few screens of what I walked into. Below are reasons
+              why they didn't and wouldn't work.
+            </p>
+          </div>
+        </div>
+        <br /><br /><br /><br /><br />
+        <div class="row">
+          <div class="col-md-4">
+            <h2 class="heading">The Void</h2>
+          </div>
+          <div class="col-md-8">
+            <p>
+              There were quite a few problems here. But, first, we must tackle
+              the name of the game - user experience. This means designing
+              interfaces that are accessible, comprehensible, and error-free
+              with minimal task time.
+            </p>
+            <ul>
+              <li>
+                <span class="significant">Inaccessible Palette.</span>
+                For starters, there was no palette. Inspecting these screens
+                outputted up to 18 different colors used through out the
+                application. The first step was recognizing key colors: Primary,
+                Secondary, Error, Success, Diabled and extended colors for
+                states of interaction. Then, color combinations had to meet A11Y
+                accessibilty to accompany viewability across all users like the
+                color blind. This tremendously lightens the style guide and
+                helps the developers establish specific color variables to use.
+              </li>
+              <li>
+                <span class="significant">Site Architecture.</span>
+                A huge disability of this interface was the inappropriate
+                sub-navigation tabs through out the application. In what seemed
+                as a tactic to "save space" was a clutter and complicated
+                roadmap that only seemed to steer the user further and further
+                from their goals. Tabs are good. Tabs on tabs on tabs are not.
+                Proper side navigation drawers and separated application
+                sections assisted this issue in the end.
+              </li>
+              <li>
+                <span class="significant">Compartments gone wild.</span>
+                When there are multiple interactive boxes and compartments on a
+                single page, it can be overwhelming and unproductive to the
+                user.It is difficult to look at collage of sections and know
+                what to do or even what you <i>can</i> do.
+              </li>
+              <li>
+                <span class="significant">Zig-Zagging viewing pattern.</span>
+                In many facets of design, it's essential to design for the
+                viewer's scanning eye. There are key directions at which the
+                user's eye flows through out art and even more so an app. The
+                initail designs did not satisfy proper vision flow and therefore
+                it was stressful and incompetent as an interactive interface.
+              </li>
+              <li>
+                <span class="significant">Inconsistent Typography.</span>
+                Typography is powerful and syntactical. It has meaning and
+                purpose in the areas in resides and the outcome of its location
+                effect not only the look but also the development of the site.
+                The primary desings had headings as body text and headings as
+                tags and visa versa and then some. Needless to say, a pattern
+                had to be established. Alongside this issue was the use of
+                multiple typefaces in accidental locations. I'd like to think
+                this was a faulty outcome of muliple designers stepping in at
+                different times of the process and <i>not</i> working together.
+              </li>
+              <li>
+                <span class="significant">Inconsistent Typography.</span>
+                Typography is powerful and syntactical. It has meaning and
+                purpose in the areas in resides and the outcome of its location
+                effect not only the look but also the development of the site.
+                The primary desings had headings as body text and headings as
+                tags and visa versa and then some. Needless to say, a pattern
+                had to be established.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End #research -->
+
+    <hr />
+
+    <div id="design">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2 class="heading">Re-Design</h2>
+          </div>
+          <div class="col-md-8">
+            <p class="left">
+              The palette of SeaSome is of course, hues of blue. Commonly found
+              on similar sites, the blue representing the ocean was a
+              no-brainer. Rather than going the route of Sea Legacy and
+              accenting it with it's complimentary color of orange, we found
+              that keeping consistant blues and black commended the site's many
+              images very well.
+            </p>
+          </div>
+          <img alt="SeaSome web wireframes" src="images/seasome_palette.png" />
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <img alt="Re-Designed Sign In Page" src="images/SignIn.jpg" />
+            <img alt="Re-Designed Post a Job" src="images/PostaJob.jpg" />
+          </div>
+          <div class="col-md-6">
+            <img
+              alt="Re-Designed Vehicle Tracking"
+              src="images/VehicleTracking.jpg"
+            />
+            <img alt="Re-Designed Job Search" src="images/JobSearch.jpg" />
+          </div>
+        </div>
+        <br /><br />
+        <hr />
+        <h2 class="heading">User Flow</h2>
+        <p>
+          <span class="significant"
+            >User profile: Roger, a photographer from Connecticut desires to
+            attend a SeaSome excursion and learn a bit more about the
+            organization and the importance of their mission. He visits
+            SeaSome's site with the goal to learn more about what he will
+            experience on an excursion, ask any potential questions and sign up
+            for an upcoming excursion.
+          </span>
+        </p>
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Boards Needed</h2>
+            <ul>
+              <li>
+                <span class="significant">Home:</span> Summarize the SeaSome
+                purpose, team, contact form and excurion opportunities.
+              </li>
+              <li>
+                <span class="significant">Mission / Team:</span> Introduce the
+                team once againa nd their roles as well as address the what and
+                why of SeaSome's mission. Include facts to give the mission
+                purpose and emotional drive.
+              </li>
+              <li>
+                <span class="significant">Excurions:</span> This is an overview
+                of the excursions in general, what they entail and upcoming
+                excurions. There is also going to be a contact form specific to
+                excurions.
+              </li>
+              <li>
+                <span class="significant">Exclusive excurion details:</span> If
+                a specific excursion is selected, i.e. Grinnel Glacer, the user
+                will be taken to this page giving them the itinerary of the
+                excursion, the leaders, a contact form and an opportunity to
+                join the excursion in the mast-head and bottom.
+              </li>
+              <li>
+                <span class="significant">Contact / FAQ:</span> This page will
+                be availble for general inquiries. It will also include an FAQ
+                section inscribing commonly asked questions.
+              </li>
+              <li>
+                <span class="significant">Donate:</span> A simple page with a
+                "donation box" that has an option to give once or monthly and
+                enter in a custom amount or choose a solidfied amount. Below the
+                box will be a graphical list of the upcoming excursions.
+              </li>
+              <li>
+                <span class="significant">Careers / Open positions:</span> Open
+                positions at SeaSome and an opportunity to volunteer for
+                SeaSome.
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <img
+              style="margin-top:40px;"
+              alt="Seasome handheld mockups"
+              src="images/seasome_mobile_mocks.png"
+            />
+          </div>
+        </div>
+        <br /><br />
+        <hr />
+
+        <div class="row">
+          <div class="col-md-4">
+            <h2 class="heading">SeaSome Walkthrough</h2>
+          </div>
+          <div class="col-md-8">
+            <p class="left">
+              Entering the site, there is immediate opportunity to view
+              excurions, visually. The captivating message and mast-image on the
+              home page also stands out to impact the user in a captivating way.
+              The pathways from the home page are numerous spanning from
+              excursion detais, contact forms, dontation opportunities and
+              meeting the SeaSome team. <br /><br />
+              The navigation elements transport the user to FAQs, general
+              excursion information, Seasome's purpose and the donation box. In
+              the footer, the user can access open positions that SeaSome may
+              have or volunteer opportunities.
+            </p>
+          </div>
+        </div>
+        <img alt="SeaSome phone mockups" src="images/seasom_iphone_mocks.png" />
+      </div>
+    </div>
+    <!-- End #design -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5 copyright">
+            <p>
+              Copyright &copy; 2018 Rachel Waag
+            </p>
+          </div>
+          <div class="col-sm-2 top">
+            <span id="to-top">
+              <i class="fa fa-chevron-up" aria-hidden="true"></i>
+            </span>
+          </div>
+          <div class="col-sm-5 social">
+            <ul>
+              <li>
+                <a href="https://github.com/raywaag" target="_blank"
+                  ><i class="fa fa-github" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/raywaagphotography/"
+                  target="_blank"
+                  ><i class="fa fa-instagram" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/rachel-waag"
+                  target="_blank"
+                  ><i class="fa fa-linkedin" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/raywaagphotography/"
+                  target="_blank"
+                  ><i class="fa fa-facebook" aria-hidden="true"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>
