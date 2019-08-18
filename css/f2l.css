@@ -1,5 +1,5 @@
 body {
-  font-family: "Staatliches", cursive;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
 }
 body.active {
@@ -8,7 +8,7 @@ body.active {
 }
 
 .significant {
-  color: #008080;
+  color: #0ea2e5;
   font-weight: 600;
 }
 .left {
@@ -58,7 +58,7 @@ header li.thick {
 }
 header a {
   display: block;
-  color: #008080;
+  color: #0ea2e5;
   padding: 10px;
   transition: 0.3s;
 }
@@ -182,8 +182,8 @@ footer {
   transition: 0.5s ease all;
 }
 .btn-rounded-teal:hover {
-  background: #008080;
-  border-color: #008080;
+  background: #0ea2e5;
+  border-color: #0ea2e5;
   text-decoration: none;
 }
 .btn-rounded-teal:focus {
