@@ -155,7 +155,7 @@ footer {
 }
 .btn-rounded-white {
   display: inline-block;
-  color: #404B51;
+  color: #fff;
   padding: 15px 25px;
   border: 3px solid #fff;
   border-radius: 30px;
@@ -215,7 +215,7 @@ img{
   height: 100vh;
   min-height: 500px;
   max-height: 1080px;
-  background: #B9DAEE;
+  background: url('../images/pwap_mast.jpg');
   background-size: cover;
   padding: 15px;
   overflow: hidden;
@@ -232,7 +232,7 @@ img{
   margin: 0;
 }
 #lead-content h1 {
-  color: #404B51;
+  color: #fff;
   font-weight: 900;
   font-size: 5em;
   text-transform: uppercase;
@@ -269,6 +269,17 @@ img{
   animation: pulsate 1.5s ease;
   animation-iteration-count: infinite;
   padding-top: 5px;
+}
+#lead-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255,255,255, 0.3);
+  z-index: 1;
 }
 @keyframes pulsate {
   0% {
