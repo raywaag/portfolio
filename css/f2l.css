@@ -301,7 +301,7 @@ img {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(2, 2, 2, 0.3);
+  background: rgba(2, 2, 2, 0.65);
   z-index: 1;
 }
 #lead a {
@@ -366,62 +366,19 @@ img {
  ----- 5. Research Styles -----
  ---------------------------
  */
-#research {
+#mud {
   padding: 75px 15px;
 }
-#research h2 {
+#mud h2 {
   color: #262626;
 }
-#research p {
+#mud p {
   margin: 0;
 }
-#research img {
+#mud img {
   text-align: center;
   max-width: 90%;
   height: auto;
-}
-/*
- -------------------------------
- ----- 8. Project Styles -----
- -------------------------------
- */
-#prototype {
-  padding: 50px 15px;
-  text-align: center;
-  align-items: center;
-}
-#prototype h2 {
-  color: #262626;
-  margin-bottom: 50px;
-}
-#prototype img {
-  text-align: center;
-  margin-top: 25px;
-  max-width: 90%;
-  height: auto;
-}
-#prototype a {
-  display: none;
-}
-#prototype img {
-  border-radius: 0;
-}
-#prototype iframe {
-  max-width: 100%;
-}
-
-@media only screen and (max-width: 768px) {
-  #prototype a {
-    display: block;
-    padding: 5;
-    text-align: center;
-  }
-  #prototype iframe {
-    margin-top: 50px;
-  }
-  #prototype .conn-img {
-    display: none;
-  }
 }
 
 /*
@@ -458,26 +415,6 @@ img {
  ----- 12. Media Queries -----
  -----------------------------
  */
-@media only screen and (max-width: 750px) {
-  #research-timeline:before,
-  #research-timeline:after {
-    left: 23px;
-  }
-  .vtimeline-date {
-    width: auto;
-    text-align: left;
-    position: relative;
-    margin-bottom: 15px;
-    display: block;
-    margin-left: 70px;
-  }
-  .vtimeline-icon {
-    margin-left: 0;
-  }
-  .vtimeline-content {
-    margin-left: 70px;
-  }
-}
 @media only screen and (max-width: 992px) {
   #lead {
     height: auto;
@@ -540,21 +477,6 @@ img {
   #lead-down {
     display: none;
   }
-  .design-block h3,
-  .design-block span {
-    float: none;
-  }
-  .project-image {
-    display: block;
-    margin: 20px auto 0 25px;
-  }
-  .project-info {
-    position: relative;
-    margin: 0;
-    padding: 30px 15px;
-    top: auto;
-    transform: none;
-  }
   footer {
     text-align: center;
   }
@@ -573,32 +495,4 @@ img {
     font-size: 0.9em;
     padding: 5px 10px;
   }
-}
-/*
- -------------------------------
- ----- 8. development Styles -----
- -------------------------------
- */
-#development {
-  padding: 50px 15px;
-  text-align: center;
-}
-#development h2 {
-  color: #000;
-  margin-bottom: 50px;
-}
-#more-development {
-  display: none;
-}
-#development ul {
-  font-family: "Raleway", sans-serif;
-}
-#development img {
-  text-align: center;
-  max-width: 100%;
-  height: auto;
-  border-radius: 0;
-}
-#development a {
-  letter-spacing: 2px;
 }

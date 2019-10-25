@@ -243,7 +243,7 @@ img{
   line-height: 0.9em;
 }
 #lead-content h2 {
-  color: #FFD400;
+  color: #000;
   font-weight: 500;
   font-size: 1.4em;
   margin-bottom: 15px;
@@ -267,7 +267,7 @@ img{
   text-align: center;
   z-index: 10;
   bottom: 15px;
-  color:#FFD400;
+  color:#000;
 }
 #lead-down span {
   cursor: pointer;
@@ -444,20 +444,6 @@ img{
   }
   #lead-down {
     display: none;
-  }
-  .design-block h3, .design-block span {
-    float: none;
-  }
-  .project-image {
-    display: block;
-    margin: 20px auto 0 25px;
-  }
-  .project-info {
-    position: relative;
-    margin: 0;
-    padding: 30px 15px;
-    top: auto;
-    transform: none;
   }
   footer {
     text-align: center;

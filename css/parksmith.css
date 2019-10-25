@@ -458,20 +458,6 @@ img{
   #lead-down {
     display: none;
   }
-  .design-block h3, .design-block span {
-    float: none;
-  }
-  .project-image {
-    display: block;
-    margin: 20px auto 0 25px;
-  }
-  .project-info {
-    position: relative;
-    margin: 0;
-    padding: 30px 15px;
-    top: auto;
-    transform: none;
-  }
   footer {
     text-align: center;
   }

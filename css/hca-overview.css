@@ -1,5 +1,5 @@
 body {
-  font-family: 'Laila', serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
 }
 body.active {
@@ -8,19 +8,15 @@ body.active {
 }
 
 .significant {
-  color: #377bb5;
+  color: #005589;
   font-weight: 600;
 }
 .left {
   text-align: left;
 }
-p{
-  font-family: 'Open Sans', sans-serif;
-  color:#5B5B5B;
-}
-ul{
-  font-family: 'Open Sans', sans-serif;
-  color:#5B5B5B;
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Libre Baskerville', serif;
 }
 @keyframes dropHeader {
   0% {
@@ -54,18 +50,18 @@ header ul {
 header li {
   display: inline-block;
 }
-header li.thick{
-  background: #A9E0FF;
+header li.thick {
+  background: #bfe0f2;
   border-radius: 4px;
 }
 header a {
   display: block;
-  color: #404B51;
+  color: #005589;
   padding: 10px;
   transition: 0.3s;
 }
 header a:hover {
-  color: #404B51;
+  color: #404b51;
   text-decoration: none;
   background: #eee;
   border-radius: 4px;
@@ -164,16 +160,31 @@ footer {
 .btn-rounded-white {
   display: inline-block;
   padding: 15px 25px;
-  background-color: #A9E0FF;
+  border: 3px solid #fff;
   border-radius: 30px;
   transition: 0.5s ease all;
 }
 .btn-rounded-white:hover {
-  color: #484d50;
   background: #fff;
+  border-color: #fff;
   text-decoration: none;
 }
 .btn-rounded-white:focus {
+  text-decoration: none;
+}
+.btn-rounded-teal {
+  display: inline-block;
+  padding: 15px 25px;
+  border: 3px solid #fff;
+  border-radius: 30px;
+  transition: 0.5s ease all;
+}
+.btn-rounded-teal:hover {
+  background: #005589;
+  border-color: #005589;
+  text-decoration: none;
+}
+.btn-rounded-teal:focus {
   text-decoration: none;
 }
 .shadow {
@@ -188,28 +199,19 @@ footer {
   font-size: 2em;
   font-weight: 300;
   margin: 0 0 30px 0;
+  border-bottom: 1px solid #d8e8f0; 
 }
-.heading:after {
-  position: absolute;
-  content: '';
-  top: 100%;
-  height: 1px;
-  width: 50px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  background: #d8e8f0;
-}
+
 .background-alt {
   background: #f2f2f5;
 }
 
-hr{
-  width:70%;
+hr {
+  width: 70%;
   text-align: center;
 }
 
-img{
+img {
   border-radius: 15px;
 }
 /*
@@ -222,7 +224,8 @@ img{
   height: 100vh;
   min-height: 500px;
   max-height: 1080px;
-  background: url('../images/sal_mast.jpg');
+  background: url("../images/hca-overview.jpg");
+  background-position: center;
   background-size: cover;
   padding: 15px;
   overflow: hidden;
@@ -235,23 +238,26 @@ img{
   transform: translate(-50%, -50%);
   text-align: center;
 }
-#lead-content h1, #lead-content h2 {
+#lead-content h1,
+#lead-content h2 {
   margin: 0;
 }
 #lead-content h1 {
-  color: #262626;
+  color: #fff;
   font-weight: 900;
-  font-size: 3em;
-  text-transform: uppercase;
+  font-size: 5em;
   letter-spacing: 0.05em;
-  line-height: 0.9em;
+  line-height: 1em;
+  text-align:left;
 }
 #lead-content h2 {
-  color: #262626;
-  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
   font-weight: 500;
-  font-size: 1.25em;
+  font-size: 1.5em;
   margin-bottom: 15px;
+  margin-top:15px;
+  text-align:left;
 }
 #lead-down {
   position: absolute;
@@ -270,7 +276,7 @@ img{
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  border: 3px solid #000;
+  border: 3px solid #fff;
   text-align: center;
 }
 #lead-down i {
@@ -286,12 +292,12 @@ img{
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(255,255,255, 0.8);
+  background: rgba(37, 28, 28, 0.7);
   z-index: 1;
 }
-#lead a{
-  font-family: 'Open Sans', sans-serif;
-  color: #000;
+#lead a {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
 }
 @keyframes pulsate {
   0% {
@@ -304,136 +310,21 @@ img{
     transform: scale(1, 1);
   }
 }
-/*
- ---------------------------
- ----- 5. About Styles -----
- ---------------------------
- */
-#about {
-  padding: 75px 15px;
-}
-#about h2 {
-  color: #374054;
-}
-#about p {
-  margin: 0;
-}
-#about img{
-  text-align: center;
-  max-width: 100%;
-  height: auto;
-  border-radius:0;
-}
+
+
+
 /*
  -------------------------------
- ----- 7. design Styles -----
+ ----- Content Styles -----
  -------------------------------
  */
-#design {
-  padding: 50px 15px 20px 15px;
-  text-align: center;
-}
-#design h2 {
-  color: #262626;
-  margin-bottom: 50px;
-}
-#design img{
-  text-align: center;
-  max-width: 100%;
-  height: auto;
-  border-radius:0;
-}
-#design ul {
+ .left-aligned {
+  padding: 50px 15px;
   text-align: left;
 }
-/*
- ---------------------------
- ----- 5. Research Styles -----
- ---------------------------
- */
-#research {
-  padding: 75px 15px;
-}
-#research h2 {
+.left-aligned h2 {
   color: #262626;
-}
-#research p {
-  margin: 0;
-}
-#research img{
-  text-align: center;
-  max-width: 90%;
-  height: auto;
-}
-/*
- -------------------------------
- ----- 8. Project Styles -----
- -------------------------------
- */
-#prototype {
-  padding: 50px 15px;
-  text-align: center;
-  align-items: center;
-}
-#prototype h2 {
-  color: #262626;
-  margin-bottom: 50px;
-}
-#prototype img{
-  text-align: center;
-  margin-top:25px;
-  max-width: 90%;
-  height: auto;
-}
-#prototype a {
-  display:none;
-}
-#prototype img {
-  border-radius: 0;
-}
-#prototype iframe {
-  max-width: 100%;
-}
-
-@media only screen and (max-width: 768px) {
-  #prototype a {
-    display:block;
-    padding:5;
-    text-align: center;
-  }
-  #prototype iframe {
-    margin-top:50px;
-  }
-}
-
-/*
- -------------------------------
- ----- 9. roles Styles -----
- -------------------------------
- */
-#roles {
-  padding: 50px 15px;
-  text-align: center;
-}
-#roles h2 {
-  color: #262626;
-  margin-bottom: 50px;
-}
-#roles ul {
-  display: block;
-  margin: 0 auto;
-  padding: 0;
-  max-width: 800px;
-}
-#roles li {
-  display: inline-block;
-  margin: 7px;
-  padding: 5px 10px;
-  color: #404B51;
-  background: #f2f2f5;
-  list-style: none;
-  cursor: default;
-  font-size: 1.2em;
+  margin-bottom: 20px;
 }
 /*
  -----------------------------
@@ -459,12 +350,6 @@ img{
   #lead-content h2 {
     font-size: 1.75em;
   }
-  #about {
-    text-align: center;
-  }
-  #about p {
-    text-align: left;
-  }
 }
 @media only screen and (max-width: 768px) {
   header {
@@ -475,7 +360,8 @@ img{
     bottom: 0;
     height: 100%;
   }
-  #mobile-menu-open, #mobile-menu-close {
+  #mobile-menu-open,
+  #mobile-menu-close {
     display: block;
   }
   #menu {
@@ -500,6 +386,10 @@ img{
   }
   #lead-down {
     display: none;
+  }
+  .design-block h3,
+  .design-block span {
+    float: none;
   }
   footer {
     text-align: center;

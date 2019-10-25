@@ -443,25 +443,6 @@ img{
  ----- 12. Media Queries -----
  -----------------------------
  */
-@media only screen and (max-width: 750px) {
-  #research-timeline:before, #research-timeline:after {
-    left: 23px;
-  }
-  .vtimeline-date {
-    width: auto;
-    text-align: left;
-    position: relative;
-    margin-bottom: 15px;
-    display: block;
-    margin-left: 70px;
-  }
-  .vtimeline-icon {
-    margin-left: 0;
-  }
-  .vtimeline-content {
-    margin-left: 70px;
-  }
-}
 @media only screen and (max-width: 992px) {
   #lead {
     height: auto;
@@ -522,20 +503,6 @@ img{
   }
   #lead-down {
     display: none;
-  }
-  .design-block h3, .design-block span {
-    float: none;
-  }
-  .project-image {
-    display: block;
-    margin: 20px auto 0 25px;
-  }
-  .project-info {
-    position: relative;
-    margin: 0;
-    padding: 30px 15px;
-    top: auto;
-    transform: none;
   }
   footer {
     text-align: center;
