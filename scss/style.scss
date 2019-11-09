@@ -275,9 +275,8 @@ header {
       letter-spacing: 5px;
       padding: 7px;
       display: block;
-      text-align: center;
+      text-align: left;
       position: relative;
-      padding-left: 62px;
       .logo-img {
         width: 50px;
         height: 50px;
@@ -503,6 +502,9 @@ header {
         height: calc(100vh - 117px);
         min-height: 700px;
         position: relative;
+        @include media-breakpoint-down(md) {
+          min-height: 650px;
+        }
         .bold-text {
           position: absolute;
           top: -20px;
@@ -523,7 +525,8 @@ header {
           display: inline-block;
           position: relative;
           @include media-breakpoint-down(md) {
-            font-size: 40px;
+            font-size: 30px;
+            text-align: left;
           }
         }
         p {
@@ -531,6 +534,9 @@ header {
           line-height: 1.5;
           font-weight: 300;
           color: $black;
+          @include media-breakpoint-down(md) {
+            text-align: left;
+          }
           a.scroll {
             color: #888;
             font-weight: 400;
@@ -694,6 +700,9 @@ header {
         color: #888;
         font-weight: 300;
         font-family: "Open Sans", sans-serif;
+        @include media-breakpoint-down(sm) {
+          font-size: 0.8em;
+        }
       }
     }
     .location {
@@ -704,6 +713,10 @@ header {
   }
   .year {
     width: 150px;
+    @include media-breakpoint-down(sm) {
+      text-align: right;
+      float: right;
+    }
   }
 }
 
@@ -825,6 +838,10 @@ textarea.form-control {
     a {
       height: 60px;
       width: 60px;
+      @include media-breakpoint-down(sm) {
+        height: 40px;
+        width: 40px;
+      }
       display: block;
       float: left;
       background: rgba($black, 0.05);
@@ -836,6 +853,9 @@ textarea.form-control {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        @include media-breakpoint-down(sm) {
+          font-size: 20px;
+        }
       }
       &:hover {
         color: $black;

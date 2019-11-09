@@ -6939,7 +6939,8 @@ header {
       padding: 7px;
       display: block;
       text-align: left;
-      position: relative; }
+      position: relative;
+      padding-left: 0px; }
       header .navbar-brand .logo .logo-img {
         width: 50px;
         height: 50px;
@@ -7117,9 +7118,6 @@ header {
         height: calc(100vh - 117px);
         min-height: 700px;
         position: relative; }
-        @media (max-width: 991.98px) {
-          .owl-carousel.home-slider .slider-item .slider-text {
-            min-height: 650px; } }
         .owl-carousel.home-slider .slider-item .slider-text .bold-text {
           position: absolute;
           top: -20px;
@@ -7140,16 +7138,12 @@ header {
           position: relative; }
           @media (max-width: 991.98px) {
             .owl-carousel.home-slider .slider-item .slider-text h1 {
-              font-size: 30px;
-              text-align: left; } }
+              font-size: 40px; } }
         .owl-carousel.home-slider .slider-item .slider-text p {
           font-size: 20px;
           line-height: 1.5;
           font-weight: 300;
           color: #121212; }
-          @media (max-width: 991.98px) {
-            .owl-carousel.home-slider .slider-item .slider-text p {
-              text-align: left; } }
           .owl-carousel.home-slider .slider-item .slider-text p a.scroll {
             color: #888;
             font-weight: 400;
@@ -7271,19 +7265,12 @@ header {
       color: #888;
       font-weight: 300;
       font-family: "Open Sans", sans-serif; }
-      @media (max-width: 767.98px) {
-        .exp-wrap .desc h4 span {
-          font-size: 0.8em; } }
     .exp-wrap .desc .location {
       margin-bottom: 0;
       font-size: 0.8em;
       color: #888; }
   .exp-wrap .year {
     width: 150px; }
-    @media (max-width: 767.98px) {
-      .exp-wrap .year {
-        text-align: right;
-        float: right; } }
 
 .skill {
   padding: 10px 15px;
@@ -7387,19 +7374,12 @@ textarea.form-control {
     background: rgba(18, 18, 18, 0.05);
     border-radius: 50%;
     position: relative; }
-    @media (max-width: 767.98px) {
-      .social li a {
-        height: 40px;
-        width: 40px; } }
     .social li a span {
       position: absolute;
       font-size: 26px;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
-      @media (max-width: 767.98px) {
-        .social li a span {
-          font-size: 20px; } }
     .social li a:hover {
       color: #121212; }
 
