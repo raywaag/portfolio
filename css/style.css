@@ -7267,13 +7267,19 @@ header {
     float: left; }
   .exp-wrap .desc {
     width: calc(100% - 150px); }
-    .exp-wrap .desc h4 span {
-      color: #888;
-      font-weight: 300;
+    .exp-wrap .desc h4 {
+      font-weight: 900;
       font-family: "Open Sans", sans-serif; }
       @media (max-width: 767.98px) {
-        .exp-wrap .desc h4 span {
-          font-size: 0.8em; } }
+        .exp-wrap .desc h4 {
+          font-size: 0.9em; } }
+      .exp-wrap .desc h4 span {
+        color: #888;
+        font-weight: 300;
+        font-family: "Open Sans", sans-serif; }
+        @media (max-width: 767.98px) {
+          .exp-wrap .desc h4 span {
+            font-size: 0.9em; } }
     .exp-wrap .desc .location {
       margin-bottom: 0;
       font-size: 0.8em;
@@ -7283,7 +7289,8 @@ header {
     @media (max-width: 767.98px) {
       .exp-wrap .year {
         text-align: right;
-        float: right; } }
+        float: right;
+        font-size: 0.65em; } }
 
 .skill {
   padding: 10px 15px;
