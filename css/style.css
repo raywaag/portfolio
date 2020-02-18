@@ -7130,6 +7130,7 @@ header {
           font-size: 100px;
           color: #121212; }
         .owl-carousel.home-slider .slider-item .slider-text h1 {
+          font-family: "Open Sans", Arial, sans-serif;
           font-size: 55px;
           color: #121212;
           line-height: 1.2;
@@ -7212,7 +7213,7 @@ header {
             background: white; }
 
 .about-section h2 {
-  font-weight: 700;
+  font-weight: 300;
   letter-spacing: 1px; }
 @media (max-width: 767.98px) {
   .about-section .author-img {

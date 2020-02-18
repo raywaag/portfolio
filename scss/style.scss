@@ -516,6 +516,7 @@ header {
           color: $black;
         }
         h1 {
+          font-family: $font-primary;
           font-size: 55px;
           color: $black;
           line-height: 1.2;
@@ -696,11 +697,11 @@ header {
   .desc {
     width: calc(100% - 150px);
     h4 {
-        font-weight: 900;
-        font-family: "Open Sans", sans-serif;
-        @include media-breakpoint-down(sm) {
-          font-size: 0.9em;
-        }
+      font-weight: 900;
+      font-family: "Open Sans", sans-serif;
+      @include media-breakpoint-down(sm) {
+        font-size: 0.9em;
+      }
       span {
         color: #888;
         font-weight: 300;
