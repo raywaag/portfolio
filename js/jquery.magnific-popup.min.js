@@ -353,7 +353,7 @@
         y("UpdateStatus", e),
           (a = e.status),
           (d = e.text),
-          b.preloader(d),
+          b.preloader.html(d),
           b.preloader.find("a").on("click", function (a) {
             a.stopImmediatePropagation();
           }),
@@ -417,7 +417,7 @@
                     )
                 : f.attr(e[1], d);
             }
-          } else b.find(p + "-" + c)(d);
+          } else b.find(p + "-" + c).html(d);
         });
     },
     _getScrollbarSize: function () {
