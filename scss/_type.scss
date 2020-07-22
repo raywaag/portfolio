@@ -1,0 +1,37 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+  font-family: "Lora", serif;
+  line-height: 1.5;
+  color: $black;
+  font-weight: 700;
+}
+.min-font {
+  font-size: 0.95em;
+}
+
+// ========================= COLOR
+.text-primary {
+  color: $primary !important;
+}
+.text-gray {
+  color: $gray !important;
+}
+
+// ========================= ALIGNMENT
+.text-align-center {
+  text-align: center !important;
+}
+.text-align-left {
+  text-align: right !important;
+}
+.text-align-right {
+  text-align: right !important;
+}

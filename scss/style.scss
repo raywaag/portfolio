@@ -1,16 +1,13 @@
 @import "bootstrap/bootstrap";
 @import "bootstrap/variables";
+@import "utility";
+@import "var";
+@import "nav";
+@import "owl";
+@import "type";
 
-$font-primary: "Open Sans", Arial, sans-serif;
-
-$white: #fff;
-$black: #121212;
-$primary: rgb(80, 171, 181);
-
-html {
-  // overflow-x: hidden;
-}
 body {
+  transition: 0.5s ease-in-out;
   font-family: $font-primary;
   background: $white;
   font-size: 18px;
@@ -59,588 +56,16 @@ body {
 }
 
 a {
-  transition: 0.3s all ease;
   color: $primary;
+  transition: 0.4s ease-in-out;
   &:hover {
+    color: $primary;
+    background-color: lighten($primary, 45%);
     text-decoration: none;
-    color: #888;
-  }
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5 {
-  font-family: "Lora", serif;
-  line-height: 1.5;
-  color: $black;
-  font-weight: 700;
-}
-
-.text-primary {
-  color: $primary !important;
-}
-
-#main-nav {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba($white, 0.99);
-  z-index: 1002;
-  text-align: center;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -moz-transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -ms-transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -o-transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -webkit-transform: scale(0.1);
-  -moz-transform: scale(0);
-  -ms-transform: scale(0);
-  -o-transform: scale(0);
-  transform: scale(0);
-  // overflow-y: scroll;
-  @include transition(0.3s);
-  .table {
-    display: table;
-    width: 100%;
-    height: 100%;
-    .table-cell {
-      display: table-cell;
-      vertical-align: middle;
-      position: relative;
-    }
-  }
-  .nav-toggle {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    padding: 20px;
-    height: 44px;
-    width: 44px;
-    line-height: 0;
-    padding: 0 !important;
-    visibility: hidden;
-    opacity: 0;
-    @include transition(0.3s);
-    i {
-      top: 18px !important;
-      left: 0 !important;
-      margin: 0 !important;
-      padding: 0 !important;
-      line-height: 0;
-      text-indent: 0;
-    }
-    &.show {
-      visibility: visible;
-      opacity: 1;
-      color: $black;
-    }
-    &:hover {
-      // background: rgba(0,0,0,1);
-      i {
-        &::before,
-        &::after {
-          content: "";
-          width: 40px;
-          height: 2px;
-          background: $black;
-          color: $black;
-          position: absolute;
-          left: 0;
-        }
-      }
-    }
-  }
-  .menu-show & {
-    visibility: visible;
-    opacity: 1;
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
-  }
-  .logo {
-    color: #888;
-    font-weight: 300;
-    font-size: 0.5em;
-    text-transform: uppercase;
-  }
-  ul {
-    padding: 0;
-    margin: 0;
-    display: block;
-    @include media-breakpoint-down(sm) {
-      padding: 20px 0 0 0;
-    }
-    li {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      font-weight: 400;
-      font-size: 40px;
-      @include media-breakpoint-down(sm) {
-        font-size: 24px;
-      }
-      a {
-        display: block;
-        color: $black;
-        padding: 5px 0;
-        span {
-          font-size: 40px;
-          color: $black;
-          position: relative;
-          padding: 0 10px;
-          small {
-            position: absolute;
-            bottom: 15px;
-            left: -30px;
-            font-size: 16px;
-            color: darken($black, 60%);
-            border-bottom: 1px solid darken($black, 60%);
-          }
-          @include media-breakpoint-down(sm) {
-            font-size: 30px;
-          }
-        }
-        &:hover,
-        &:active,
-        &:focus {
-          outline: none;
-          text-decoration: none;
-          opacity: 0.5;
-          span {
-            &:before {
-              visibility: visible;
-              -webkit-transform: scaleX(1);
-              -moz-transform: scaleX(1);
-              -ms-transform: scaleX(1);
-              -o-transform: scaleX(1);
-              transform: scaleX(1);
-            }
-          }
-        }
-      }
-      &.active {
-        a {
-          span {
-            color: $primary;
-            &:before {
-              background: $primary;
-              visibility: visible;
-              -webkit-transform: scaleX(1);
-              -moz-transform: scaleX(1);
-              -ms-transform: scaleX(1);
-              -o-transform: scaleX(1);
-              transform: scaleX(1);
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-// Header
-header {
-  padding: 2em 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9;
-  margin: 0 auto;
-  @include media-breakpoint-down(sm) {
-    padding: 2em 0;
-    position: absolute;
-  }
-  .navbar-brand {
-    float: left;
-    .logo {
-      font-size: 20px;
-      text-transform: uppercase;
-      color: $black;
-      font-weight: 400;
-      letter-spacing: 5px;
-      padding: 7px;
-      display: block;
-      text-align: left;
-      position: relative;
-      .logo-img {
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        @include border-radius(50%);
-      }
-      &:hover {
-        text-decoration: none !important;
-      }
-      &:active,
-      &:focus {
-        outline: none;
-        text-decoration: none;
-      }
-    }
-  }
-}
-
-.nav-toggle {
-  cursor: pointer;
-  text-decoration: none;
-  &.active i {
-    &::before,
-    &::after {
-      background: $black;
-    }
-  }
-  &.dark {
-    &.active i {
-      &::before,
-      &::after {
-        background: $black;
-      }
-    }
-  }
-  &:hover,
-  &:focus,
-  &:active {
-    outline: none;
-    border-bottom: none !important;
-  }
-  i {
-    position: relative;
-    display: inline-block;
-    width: 40px;
-    height: 2px;
-    color: $black;
-    font: bold 14px/0.4 Helvetica;
-    text-transform: uppercase;
-    text-indent: -55px;
-    background: $black;
-    transition: all 0.2s ease-out;
-    .menu-show & {
-      background: $black;
-      color: $black;
-    }
-    &::before,
-    &::after {
-      content: "";
-      width: 40px;
-      height: 2px;
-      background: $black;
-      position: absolute;
-      left: 0;
-      .menu-show & {
-        background: $black;
-      }
-      @include transition(0.2s);
-    }
-  }
-  &.dark {
-    i {
-      position: relative;
-      color: $black;
-      background: $black;
-      transition: all 0.2s ease-out;
-      &::before,
-      &::after {
-        background: $black;
-        @include transition(0.2s);
-      }
-    }
-  }
-}
-
-.nav-toggle i::before {
-  top: -7px;
-}
-.nav-toggle i::after {
-  bottom: -7px;
-}
-.nav-toggle:hover i::before {
-  top: -10px;
-}
-.nav-toggle:hover i::after {
-  bottom: -10px;
-}
-.nav-toggle.active i {
-  background: transparent;
-}
-.nav-toggle.active i::before {
-  top: 0;
-  -webkit-transform: rotateZ(45deg);
-  -moz-transform: rotateZ(45deg);
-  -ms-transform: rotateZ(45deg);
-  -o-transform: rotateZ(45deg);
-  transform: rotateZ(45deg);
-}
-.nav-toggle.active i::after {
-  bottom: 0;
-  -webkit-transform: rotateZ(-45deg);
-  -moz-transform: rotateZ(-45deg);
-  -ms-transform: rotateZ(-45deg);
-  -o-transform: rotateZ(-45deg);
-  transform: rotateZ(-45deg);
-}
-.nav-toggle {
-  float: right;
-  z-index: 1003;
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  cursor: pointer;
-  margin-top: 0;
-}
-
-//OWL CAROUSEL
-.owl-carousel {
-  position: relative;
-  .owl-item {
-    opacity: 0.4;
-    &.active {
-      opacity: 1;
-    }
-  }
-
-  .owl-nav {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    .owl-prev,
-    .owl-next {
-      position: absolute;
-      transform: translateY(-50%);
-      margin-top: -10px;
-      @include transition(0.7s);
-      span {
-        &:before {
-          font-size: 40px;
-        }
-      }
-      opacity: 0;
-    }
-    .owl-prev {
-      left: 0;
-    }
-    .owl-next {
-      right: 0;
-    }
-  }
-  .owl-dots {
-    position: relative;
-    text-align: center;
-    margin-top: 30px;
-    .owl-dot {
-      display: inline-block;
-      zoom: 1;
-      span {
-        width: 10px;
-        height: 10px;
-        background: lighten($black, 60%);
-        border-radius: 50%;
-        display: inline-block;
-        margin: 5px 7px;
-      }
-      &.active {
-        span {
-          background: $primary;
-        }
-      }
-    }
-  }
-  &:hover {
-    .owl-nav {
-      .owl-prev,
-      .owl-next {
-        opacity: 1;
-      }
-      .owl-prev {
-        left: -20px;
-      }
-      .owl-next {
-        right: -20px;
-      }
-    }
-  }
-  // big slider
-  &.home-slider {
-    z-index: 0;
-    position: relative;
-
-    .slider-item {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      height: calc(100vh - 0);
-      min-height: 700px;
-      position: relative;
-      .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        content: "";
-        background: $primary;
-        opacity: 0;
-      }
-      .slider-text {
-        color: $black;
-        height: calc(100vh - 117px);
-        min-height: 700px;
-        position: relative;
-        @include media-breakpoint-down(md) {
-          min-height: 650px;
-        }
-        .bold-text {
-          position: absolute;
-          top: -20px;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          font-weight: 700 !important;
-          font-size: 100px;
-          color: $black;
-        }
-        h1 {
-          font-family: $font-primary;
-          font-size: 55px;
-          color: $black;
-          line-height: 1.2;
-          font-weight: 700;
-          text-transform: uppercase;
-          letter-spacing: 10px;
-          display: inline-block;
-          position: relative;
-          @include media-breakpoint-down(md) {
-            font-size: 30px;
-            text-align: left;
-          }
-        }
-        p {
-          font-size: 20px;
-          line-height: 1.5;
-          font-weight: 300;
-          color: $black;
-          @include media-breakpoint-down(md) {
-            text-align: left;
-          }
-          a.scroll {
-            color: #888;
-            font-weight: 400;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-          }
-          strong {
-            font-weight: 700;
-            a {
-              color: $black;
-            }
-          }
-        }
-        .breadcrumbs {
-          text-transform: uppercase;
-          font-size: 13px;
-          letter-spacing: 1px;
-          span {
-            border-bottom: 2px solid $black;
-            a {
-              color: $black;
-            }
-          }
-        }
-      }
-    }
-    .owl-nav {
-      .owl-prev,
-      .owl-next {
-        span {
-          color: $black;
-        }
-      }
-    }
-    &:hover {
-      .owl-nav {
-        .owl-prev,
-        .owl-next {
-          opacity: 1;
-        }
-        .owl-prev {
-          left: 20px;
-        }
-        .owl-next {
-          right: 20px;
-        }
-      }
-    }
-    .owl-dots {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 60px;
-      width: 100%;
-      text-align: center;
-
-      .owl-dot {
-        width: 18px;
-        height: 18px;
-        margin: 5px;
-        border-radius: 50%;
-        background: lighten($black, 90%);
-        background: none;
-        border: 2px solid rgba(255, 255, 255, 0.5);
-        outline: none !important;
-        position: relative;
-        transition: 0.3s all ease;
-        display: inline-block;
-        span {
-          position: absolute;
-          width: 12px;
-          height: 12px;
-          background: rgba(255, 255, 255, 0.5);
-          border-radius: 50% !important;
-          left: 0%;
-          top: 2px;
-          display: block;
-          transform: translate(-50%, -50%);
-        }
-        &.active {
-          border: 2px solid rgba(255, 255, 255, 1);
-          span {
-            background: rgba(255, 255, 255, 1);
-          }
-        }
-      }
-    }
   }
 }
 
 // about
-.about-section {
-  h2 {
-    font-weight: 300;
-    letter-spacing: 1px;
-  }
-  .author-img {
-    @include media-breakpoint-down(sm) {
-      display: block;
-      height: 300px;
-    }
-  }
-}
 .wrap {
   padding: 0;
   @include media-breakpoint-down(sm) {
@@ -650,15 +75,15 @@ header {
     @include media-breakpoint-up(md) {
       position: relative;
     }
-    .bold-text {
+    .bg-text {
       position: absolute;
       z-index: -1;
-      top: -80px;
+      top: -90px;
       left: -50px;
       right: 0;
       bottom: 0;
       font-weight: 900 !important;
-      color: rgba(12, 12, 12, 0.08);
+      color: lighten($gray, 43%);
       text-transform: uppercase;
       @include media-breakpoint-up(lg) {
         font-size: 10em;
@@ -672,15 +97,8 @@ header {
     }
   }
 }
-.profile {
-  margin-bottom: 5em;
-  p {
-    strong {
-      color: $black;
-      font-weight: 400;
-    }
-  }
-}
+
+// experience
 .exp {
   width: 100%;
   float: left;
@@ -688,7 +106,7 @@ header {
 }
 .exp-wrap {
   width: 100%;
-  border-bottom: 1px solid rgb(213, 213, 213);
+  border-bottom: 1px solid lighten($gray, 40%);
   float: left;
   .desc,
   .year {
@@ -703,7 +121,7 @@ header {
         font-size: 0.9em;
       }
       span {
-        color: #888;
+        color: $gray;
         font-weight: 300;
         font-family: "Open Sans", sans-serif;
         @include media-breakpoint-down(sm) {
@@ -714,7 +132,7 @@ header {
     .location {
       margin-bottom: 0;
       font-size: 0.8em;
-      color: #888;
+      color: $gray;
     }
   }
   .year {
@@ -727,113 +145,56 @@ header {
   }
 }
 
-//SKILLS--------------------
+// text for project thumbnails
+.thumb-text {
+  width: 100%;
+  padding: 10% 7%;
+  @include media-breakpoint-up(md) {
+    width: 60%;
+    padding: 7%;
+  }
+  .subheading {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: $gray;
+  }
+  .heading {
+    font-size: 30px;
+    margin-bottom: 30px;
+    a {
+      color: $black;
+      border-bottom: 4px solid transparent;
+      &:hover,
+      &:focus {
+        color: $primary;
+        text-decoration: none;
+        border-bottom: 4px solid $primary;
+      }
+    }
+  }
+  p {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// scrollax animate
+.animate {
+  opacity: 0;
+  visibility: hidden;
+}
+
+// skills
 .skill {
   padding: 10px 15px;
   background-color: rgb(240, 240, 240);
   border-radius: 5px;
   line-height: 80px;
   white-space: nowrap;
-}
-
-// USEFUL CODE
-.form-group {
-  label {
-    color: $black;
-  }
-}
-.form-control {
-  height: 52px !important;
-  background: transparent !important;
-  color: lighten($black, 45%) !important;
-  font-size: 18px;
-  border-radius: 0px;
-  box-shadow: none !important;
-  border: 1px solid lighten($black, 10%);
-  &:focus,
-  &:active {
-    border-color: darken($black, 70%);
-  }
-}
-textarea.form-control {
-  height: inherit !important;
-}
-.vh-100 {
-  height: 100vh;
-  @include media-breakpoint-down(lg) {
-    height: inherit;
-    padding-top: 5em;
-    padding-bottom: 5em;
-  }
-}
-.vh-75 {
-  height: 75vh;
-  min-height: 700px;
-  @include media-breakpoint-down(lg) {
-    min-height: 700px;
-    height: inherit;
-    padding-top: 5em;
-    padding-bottom: 5em;
-  }
-}
-
-.tab-nav {
-  padding: 0;
-  margin: 0;
-  display: inline-block !important;
-  @include media-breakpoint-down(sm) {
-    display: block !important;
-    margin-bottom: 10px;
-    width: 100% !important;
-  }
-  li {
-    padding: 0;
-    margin: 0 5px;
-    display: inline-block !important;
-    @include media-breakpoint-down(sm) {
-      display: block !important;
-      margin-bottom: 10px;
-      width: 100% !important;
-    }
-    a {
-      text-transform: uppercase;
-      font-size: 14px;
-      letter-spacing: 0.2em;
-      color: #555;
-      border: 2px solid #555;
-      border-radius: 0 !important;
-      &.active {
-        background: none !important;
-        color: lighten(#000, 100%) !important;
-        border: 2px solid $black;
-      }
-    }
-  }
-}
-
-.animate {
-  opacity: 0;
-  visibility: hidden;
-}
-
-// about
-.section {
-  padding: 7em 0;
-}
-
-.footer {
-  font-size: 16px;
-  background: $white;
-  padding: 8em 0;
-  p {
-    color: rgba($black, 0.5);
-  }
-  a {
-    color: rgba($black, 0.5);
-    &:hover {
-      color: $black;
-    }
-  }
 }
 
 // social media icons
@@ -865,154 +226,26 @@ textarea.form-control {
         }
       }
       &:hover {
-        color: $black;
+        color: $primary;
+        background-color: lighten($primary, 46%);
       }
     }
   }
 }
 
-// magnific pop up
-.image-popup {
-  cursor: -webkit-zoom-in;
-  cursor: -moz-zoom-in;
-  cursor: zoom-in;
-}
-.mfp-with-zoom .mfp-container,
-.mfp-with-zoom.mfp-bg {
-  opacity: 0;
-  -webkit-backface-visibility: hidden;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-.mfp-with-zoom.mfp-ready .mfp-container {
-  opacity: 1;
-}
-.mfp-with-zoom.mfp-ready.mfp-bg {
-  opacity: 0.8;
-}
-
-.mfp-with-zoom.mfp-removing .mfp-container,
-.mfp-with-zoom.mfp-removing.mfp-bg {
-  opacity: 0;
-}
-
-//blocks + blogs
-.block-20 {
-  overflow: hidden;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 250px;
-  position: relative;
-  display: block;
-}
-.blog-entry {
-  @include media-breakpoint-up(md) {
-    margin-bottom: 30px;
+// footer
+.footer {
+  font-size: 16px;
+  background-color: transparent;
+  padding: 8em 0;
+  p {
+    color: rgba($black, 0.5);
   }
-  @include media-breakpoint-down(sm) {
-    margin-bottom: 30px;
-  }
-  .text {
-    position: relative;
-    border-top: 0;
-    border-radius: 2px;
-    .heading {
-      font-size: 20px;
-      margin-bottom: 16px;
-      font-weight: 500;
-      a {
-        color: $black;
-        &:hover,
-        &:focus,
-        &:active {
-          color: $primary;
-        }
-      }
-    }
-    .meta-chat {
-    }
-  }
-  .meta {
-    > div {
-      display: inline-block;
-      margin-right: 5px;
-      margin-bottom: 5px;
-      font-size: 15px;
-      a {
-        font-size: 15px;
-        color: darken($black, 45%);
-        &:hover {
-        }
-      }
-    }
-  }
-}
-
-.block-3 {
-  .image {
-    width: 100%;
-    padding: 10% 7%;
-    @include media-breakpoint-up(md) {
-      width: 40%;
-      padding: 10% 7%;
-    }
-    .icon {
-      width: 100px;
-      height: 100px;
-      background: $primary;
-      @include border-radius(50%);
-      @include transition(0.3s);
-      span {
-        color: $black;
-      }
-      opacity: 0;
-    }
+  a {
+    color: rgba($black, 0.5);
     &:hover {
-      .icon {
-        opacity: 1;
-      }
-    }
-  }
-  .text {
-    width: 100%;
-    padding: 10% 7%;
-    @include media-breakpoint-up(md) {
-      width: 60%;
-      padding: 10% 7%;
-    }
-  }
-  .text {
-    .subheading {
-      font-family: "Open Sans", sans-serif;
-      font-weight: 400;
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: #888;
-    }
-    .heading {
-      font-size: 30px;
-      margin-bottom: 30px;
-      a {
-        color: $black;
-      }
-    }
-    p {
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-  .image {
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    @include media-breakpoint-down(sm) {
-      height: 300px;
+      color: $primary;
+      text-decoration: none;
     }
   }
 }

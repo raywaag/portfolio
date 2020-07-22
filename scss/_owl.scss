@@ -1,0 +1,221 @@
+//OWL CAROUSEL
+.owl-carousel {
+  position: relative;
+  .owl-item {
+    opacity: 0.4;
+    &.active {
+      opacity: 1;
+    }
+  }
+  .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    .owl-prev,
+    .owl-next {
+      position: absolute;
+      transform: translateY(-50%);
+      margin-top: -10px;
+      @include transition(0.7s);
+      span {
+        &:before {
+          font-size: 40px;
+        }
+      }
+      opacity: 0;
+    }
+    .owl-prev {
+      left: 0;
+    }
+    .owl-next {
+      right: 0;
+    }
+  }
+  .owl-dots {
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+    .owl-dot {
+      display: inline-block;
+      zoom: 1;
+      span {
+        width: 10px;
+        height: 10px;
+        background: lighten($black, 60%);
+        border-radius: 50%;
+        display: inline-block;
+        margin: 5px 7px;
+      }
+      &.active {
+        span {
+          background: $primary;
+        }
+      }
+    }
+  }
+  &:hover {
+    .owl-nav {
+      .owl-prev,
+      .owl-next {
+        opacity: 1;
+      }
+      .owl-prev {
+        left: -20px;
+      }
+      .owl-next {
+        right: -20px;
+      }
+    }
+  }
+  // big slider
+  &.home-slider {
+    z-index: 0;
+    position: relative;
+
+    .slider-item {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: calc(100vh - 0);
+      min-height: 700px;
+      position: relative;
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: "";
+        background: $primary;
+        opacity: 0;
+      }
+      .slider-text {
+        color: $black;
+        height: calc(100vh - 117px);
+        min-height: 700px;
+        position: relative;
+        @include media-breakpoint-down(md) {
+          min-height: 650px;
+        }
+        .bg-text {
+          position: absolute;
+          top: -20px;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          font-weight: 700 !important;
+          font-size: 100px;
+          color: $black;
+        }
+        h1 {
+          font-family: $font-primary;
+          font-size: 55px;
+          color: $black;
+          line-height: 1.2;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 10px;
+          display: inline-block;
+          position: relative;
+          @include media-breakpoint-down(md) {
+            font-size: 30px;
+            text-align: left;
+          }
+        }
+        p {
+          font-size: 20px;
+          line-height: 1.5;
+          font-weight: 300;
+          color: $black;
+          @include media-breakpoint-down(md) {
+            text-align: left;
+          }
+          a.scroll {
+            color: $gray;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+          }
+          strong {
+            font-weight: 700;
+            a {
+              color: $black;
+            }
+          }
+        }
+        .breadcrumbs {
+          text-transform: uppercase;
+          font-size: 13px;
+          letter-spacing: 1px;
+          span {
+            border-bottom: 2px solid $black;
+            a {
+              color: $black;
+            }
+          }
+        }
+      }
+    }
+    .owl-nav {
+      .owl-prev,
+      .owl-next {
+        span {
+          color: $black;
+        }
+      }
+    }
+    &:hover {
+      .owl-nav {
+        .owl-prev,
+        .owl-next {
+          opacity: 1;
+        }
+        .owl-prev {
+          left: 20px;
+        }
+        .owl-next {
+          right: 20px;
+        }
+      }
+    }
+    .owl-dots {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 60px;
+      width: 100%;
+      text-align: center;
+
+      .owl-dot {
+        width: 18px;
+        height: 18px;
+        margin: 5px;
+        border-radius: 50%;
+        background: lighten($black, 90%);
+        background: none;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        outline: none !important;
+        position: relative;
+        transition: 0.3s all ease;
+        display: inline-block;
+        span {
+          position: absolute;
+          width: 12px;
+          height: 12px;
+          background: rgba(255, 255, 255, 0.5);
+          border-radius: 50% !important;
+          left: 0%;
+          top: 2px;
+          display: block;
+          transform: translate(-50%, -50%);
+        }
+        &.active {
+          border: 2px solid rgba(255, 255, 255, 1);
+          span {
+            background: rgba(255, 255, 255, 1);
+          }
+        }
+      }
+    }
+  }
+}
