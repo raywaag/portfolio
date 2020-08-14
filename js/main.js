@@ -1,23 +1,10 @@
-AOS.init({
-  duration: 800,
-  easing: "slide",
-});
-
 $(document).ready(function ($) {
   "use strict";
 
-  $(window).stellar({
-    responsive: false,
-    parallaxBackgrounds: true,
-    parallaxElements: true,
-    horizontalScrolling: false,
-    hideDistantElements: false,
-    scrollProperty: "scroll",
-  });
-
-  // Scrollax
+  // Scrollax for project images
   $.Scrollax();
 
+  // Owl Carousel on Home page
   var carousel = function () {
     $(".home-slider").owlCarousel({
       loop: true,
@@ -51,6 +38,7 @@ $(document).ready(function ($) {
   };
   carousel();
 
+  // Navigation
   var burgerMenu = function () {
     $(".js-nav-toggle").on("click", function (event) {
       event.preventDefault();
@@ -68,6 +56,7 @@ $(document).ready(function ($) {
   };
   burgerMenu();
 
+  // Support animated classes
   var contentWayPoint = function () {
     var i = 0;
     $(".animate").waypoint(
@@ -104,25 +93,4 @@ $(document).ready(function ($) {
     );
   };
   contentWayPoint();
-
-  // magnific popup
-  $(".image-popup").magnificPopup({
-    type: "image",
-    closeOnContentClick: true,
-    closeBtnInside: false,
-    fixedContentPos: true,
-    mainClass: "mfp-no-margins mfp-with-zoom", // class to remove default margin from left and right side
-    gallery: {
-      enabled: true,
-      navigateByImgClick: true,
-      preload: [0, 1], // Will preload 0 - before current, and 1 after the current image
-    },
-    image: {
-      verticalFit: true,
-    },
-    zoom: {
-      enabled: true,
-      duration: 300, // don't foget to change the duration also in CSS
-    },
-  });
 });
