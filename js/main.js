@@ -1,9 +1,9 @@
 AOS.init({
   duration: 800,
-  easing: "slide"
+  easing: "slide",
 });
 
-$(document).ready(function($) {
+$(document).ready(function ($) {
   "use strict";
 
   $(window).stellar({
@@ -12,13 +12,13 @@ $(document).ready(function($) {
     parallaxElements: true,
     horizontalScrolling: false,
     hideDistantElements: false,
-    scrollProperty: "scroll"
+    scrollProperty: "scroll",
   });
 
   // Scrollax
   $.Scrollax();
 
-  var carousel = function() {
+  var carousel = function () {
     $(".home-slider").owlCarousel({
       loop: true,
       autoplay: true,
@@ -31,28 +31,28 @@ $(document).ready(function($) {
       items: 1,
       navText: [
         "<span class='ion-md-arrow-back'></span>",
-        "<span class='ion-chevron-right'></span>"
+        "<span class='ion-chevron-right'></span>",
       ],
       responsive: {
         0: {
           items: 1,
-          nav: false
+          nav: false,
         },
         600: {
           items: 1,
-          nav: false
+          nav: false,
         },
         1000: {
           items: 1,
-          nav: false
-        }
-      }
+          nav: false,
+        },
+      },
     });
   };
   carousel();
 
-  var burgerMenu = function() {
-    $(".js-nav-toggle").on("click", function(event) {
+  var burgerMenu = function () {
+    $(".js-nav-toggle").on("click", function (event) {
       event.preventDefault();
       var $this = $(this);
       if ($("body").hasClass("menu-show")) {
@@ -60,7 +60,7 @@ $(document).ready(function($) {
         $("#main-nav > .js-nav-toggle").removeClass("show");
       } else {
         $("body").addClass("menu-show");
-        setTimeout(function() {
+        setTimeout(function () {
           $("#main-nav > .js-nav-toggle").addClass("show");
         }, 600);
       }
@@ -68,19 +68,19 @@ $(document).ready(function($) {
   };
   burgerMenu();
 
-  var contentWayPoint = function() {
+  var contentWayPoint = function () {
     var i = 0;
     $(".animate").waypoint(
-      function(direction) {
+      function (direction) {
         if (direction === "down" && !$(this.element).hasClass("animated")) {
           i++;
 
           $(this.element).addClass("item-animate");
-          setTimeout(function() {
-            $("body .animate.item-animate").each(function(k) {
+          setTimeout(function () {
+            $("body .animate.item-animate").each(function (k) {
               var el = $(this);
               setTimeout(
-                function() {
+                function () {
                   var effect = el.data("animate-effect");
                   if (effect === "fadeIn") {
                     el.addClass("fadeIn animated");
@@ -115,14 +115,14 @@ $(document).ready(function($) {
     gallery: {
       enabled: true,
       navigateByImgClick: true,
-      preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+      preload: [0, 1], // Will preload 0 - before current, and 1 after the current image
     },
     image: {
-      verticalFit: true
+      verticalFit: true,
     },
     zoom: {
       enabled: true,
-      duration: 300 // don't foget to change the duration also in CSS
-    }
+      duration: 300, // don't foget to change the duration also in CSS
+    },
   });
 });
