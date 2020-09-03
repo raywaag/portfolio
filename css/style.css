@@ -8571,6 +8571,21 @@ a {
     background-color: #f1f8f9;
     text-decoration: none; }
 
+.resume-btn {
+  border: 2px solid #50abb5;
+  padding: 10px 20px;
+  border-radius: 150px;
+  font-weight: 500;
+  background-color: transparent;
+  color: #50abb5;
+  transition: 0.3s ease-in-out;
+  font-size: 1em;
+  cursor: pointer; }
+  .resume-btn:hover, .resume-btn:focus {
+    background-color: #50abb5;
+    color: #fff;
+    outline: none; }
+
 .wrap {
   padding: 0; }
   @media (max-width: 767.98px) {

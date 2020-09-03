@@ -65,6 +65,25 @@ a {
   }
 }
 
+//resume button
+.resume-btn {
+  border: 2px solid $primary;
+  padding: 10px 20px;
+  border-radius: 150px;
+  font-weight: 500;
+  background-color: transparent;
+  color: $primary;
+  transition: 0.3s ease-in-out;
+  font-size: 1em;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: $primary;
+    color: $white;
+    outline: none;
+  }
+}
+
 // about
 .wrap {
   padding: 0;
