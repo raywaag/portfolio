@@ -68,7 +68,7 @@ a {
 //resume button
 .resume-btn {
   border: 2px solid $primary;
-  padding: 10px 20px;
+  padding: 8px 16px;
   border-radius: 150px;
   font-weight: 500;
   background-color: transparent;
@@ -81,6 +81,8 @@ a {
     background-color: $primary;
     color: $white;
     outline: none;
+    padding-left: 28px;
+    padding-right: 28px;
   }
 }
 
