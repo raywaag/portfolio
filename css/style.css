@@ -8129,7 +8129,7 @@ a.text-dark:hover, a.text-dark:focus {
     transform: scale(1); }
   #main-nav .logo {
     color: #121212;
-    font-weight: 600;
+    font-family: "Open-Sans-Regular";
     font-size: 0.5em;
     text-transform: uppercase; }
   #main-nav ul {
@@ -8143,7 +8143,7 @@ a.text-dark:hover, a.text-dark:focus {
       padding: 0;
       margin: 0;
       list-style: none;
-      font-weight: 400;
+      font-family: "Open-Sans-SemiBold";
       font-size: 40px; }
       @media (max-width: 767.98px) {
         #main-nav ul li {
@@ -8207,7 +8207,7 @@ header {
       font-size: 20px;
       text-transform: uppercase;
       color: #121212;
-      font-weight: 400;
+      font-family: "Open-Sans-Regular";
       letter-spacing: 5px;
       padding: 7px;
       display: block;
@@ -8399,15 +8399,14 @@ header {
           left: 0;
           right: 0;
           bottom: 0;
-          font-weight: 700 !important;
+          font-family: "Open-Sans-Extra-Bold" !important;
           font-size: 100px;
           color: #121212; }
         .owl-carousel.home-slider .slider-item .slider-text h1 {
-          font-family: "Open Sans", Arial, sans-serif;
           font-size: 55px;
           color: #121212;
           line-height: 1.2;
-          font-weight: 700;
+          font-family: "Open-Sans-Bold";
           text-transform: uppercase;
           letter-spacing: 10px;
           display: inline-block;
@@ -8419,18 +8418,18 @@ header {
         .owl-carousel.home-slider .slider-item .slider-text p {
           font-size: 20px;
           line-height: 1.5;
-          font-weight: 300;
+          font-family: "Open-Sans-Regular";
           color: #121212; }
           @media (max-width: 991.98px) {
             .owl-carousel.home-slider .slider-item .slider-text p {
               text-align: left; } }
           .owl-carousel.home-slider .slider-item .slider-text p a.scroll {
             color: #888;
-            font-weight: 400;
+            font-family: "Open-Sans-Regular";
             text-transform: uppercase;
             letter-spacing: 4px; }
           .owl-carousel.home-slider .slider-item .slider-text p strong {
-            font-weight: 700; }
+            font-family: "Open-Sans-Extra-Bold"; }
             .owl-carousel.home-slider .slider-item .slider-text p strong a {
               color: #121212; }
         .owl-carousel.home-slider .slider-item .slider-text .breadcrumbs {
@@ -8485,6 +8484,27 @@ header {
           .owl-carousel.home-slider .owl-dots .owl-dot.active span {
             background: white; }
 
+@font-face {
+  font-family: "Open-Sans-Regular";
+  src: url("../fonts/open_sans/OpenSans-Regular.ttf"); }
+@font-face {
+  font-family: "Open-Sans-SemiBold";
+  src: url("../fonts/open_sans/OpenSans-SemiBold.ttf"); }
+@font-face {
+  font-family: "Open-Sans-Bold";
+  src: url("../fonts/open_sans/OpenSans-Bold.ttf"); }
+@font-face {
+  font-family: "Open-Sans-Extra-Bold";
+  src: url("../fonts/open_sans/OpenSans-ExtraBold.ttf"); }
+@font-face {
+  font-family: "Lora-Regular";
+  src: url("../fonts/lora/Lora-Regular.ttf"); }
+@font-face {
+  font-family: "Lora-Semi-Bold";
+  src: url("../fonts/lora/Lora-SemiBold.ttf"); }
+@font-face {
+  font-family: "Lora-Bold";
+  src: url("../fonts/lora/Lora-Bold.ttf"); }
 h1,
 h2,
 h3,
@@ -8495,10 +8515,9 @@ h5,
 .h3,
 .h4,
 .h5 {
-  font-family: "Lora", serif;
+  font-family: "Lora-Bold", serif;
   line-height: 1.5;
-  color: #121212;
-  font-weight: 700; }
+  color: #121212; }
 
 .min-font {
   font-size: 0.8em; }
@@ -8518,13 +8537,17 @@ h5,
 .text-align-right {
   text-align: right !important; }
 
+*::selection {
+  background-color: #121212;
+  color: #fff; }
+
 body {
   transition: 0.5s ease-in-out;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open-Sans-Regular", Arial, sans-serif;
   background: #fff;
   font-size: 18px;
   line-height: 1.8;
-  font-weight: 400;
+  font-family: "Open-Sans-Regular";
   color: black;
   position: relative; }
   body:after {
@@ -8573,9 +8596,9 @@ a {
 
 .resume-btn {
   border: 2px solid #50abb5;
-  padding: 8px 16px;
+  padding: 8px 18px;
   border-radius: 150px;
-  font-weight: 500;
+  font-family: "Open-Sans-Regular";
   background-color: transparent;
   color: #50abb5;
   transition: 0.3s ease-in-out;
@@ -8603,7 +8626,7 @@ a {
     left: -50px;
     right: 0;
     bottom: 0;
-    font-weight: 900 !important;
+    font-family: "Lora-Bold" !important;
     color: #f6f6f6;
     text-transform: uppercase; }
     @media (min-width: 992px) {
@@ -8616,45 +8639,6 @@ a {
       .wrap .about-desc .bg-text {
         display: none; } }
 
-.exp {
-  width: 100%;
-  float: left;
-  margin-bottom: 3em; }
-
-.exp-wrap {
-  width: 100%;
-  border-bottom: 1px solid #eeeeee;
-  float: left; }
-  .exp-wrap .desc,
-  .exp-wrap .year {
-    float: left; }
-  .exp-wrap .desc {
-    width: calc(100% - 150px); }
-    .exp-wrap .desc h4 {
-      font-weight: 900;
-      font-family: "Open Sans", sans-serif; }
-      @media (max-width: 767.98px) {
-        .exp-wrap .desc h4 {
-          font-size: 0.9em; } }
-      .exp-wrap .desc h4 span {
-        color: #888;
-        font-weight: 300;
-        font-family: "Open Sans", sans-serif; }
-        @media (max-width: 767.98px) {
-          .exp-wrap .desc h4 span {
-            font-size: 0.9em; } }
-    .exp-wrap .desc .location {
-      margin-bottom: 0;
-      font-size: 0.8em;
-      color: #888; }
-  .exp-wrap .year {
-    width: 150px; }
-    @media (max-width: 767.98px) {
-      .exp-wrap .year {
-        text-align: right;
-        float: right;
-        font-size: 0.65em; } }
-
 .thumb-text {
   width: 100%;
   padding: 10% 7%; }
@@ -8663,8 +8647,7 @@ a {
       width: 60%;
       padding: 7%; } }
   .thumb-text .subheading {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
+    font-family: "Open-Sans-Regular";
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 0.1em;

@@ -1,3 +1,35 @@
+// Open Sans
+@font-face {
+  font-family: "Open-Sans-Regular";
+  src: url("../fonts/open_sans/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: "Open-Sans-SemiBold";
+  src: url("../fonts/open_sans/OpenSans-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Open-Sans-Bold";
+  src: url("../fonts/open_sans/OpenSans-Bold.ttf");
+}
+@font-face {
+  font-family: "Open-Sans-Extra-Bold";
+  src: url("../fonts/open_sans/OpenSans-ExtraBold.ttf");
+}
+
+// Lora
+@font-face {
+  font-family: "Lora-Regular";
+  src: url("../fonts/lora/Lora-Regular.ttf");
+}
+@font-face {
+  font-family: "Lora-Semi-Bold";
+  src: url("../fonts/lora/Lora-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Lora-Bold";
+  src: url("../fonts/lora/Lora-Bold.ttf");
+}
+
 h1,
 h2,
 h3,
@@ -8,10 +40,9 @@ h5,
 .h3,
 .h4,
 .h5 {
-  font-family: "Lora", serif;
+  font-family: "Lora-Bold", serif;
   line-height: 1.5;
   color: $black;
-  font-weight: 700;
 }
 .min-font {
   font-size: 0.8em;

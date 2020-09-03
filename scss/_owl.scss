@@ -103,16 +103,15 @@
           left: 0;
           right: 0;
           bottom: 0;
-          font-weight: 700 !important;
+          font-family: "Open-Sans-Extra-Bold" !important;
           font-size: 100px;
           color: $black;
         }
         h1 {
-          font-family: $font-primary;
           font-size: 55px;
           color: $black;
           line-height: 1.2;
-          font-weight: 700;
+          font-family: "Open-Sans-Bold";
           text-transform: uppercase;
           letter-spacing: 10px;
           display: inline-block;
@@ -125,19 +124,19 @@
         p {
           font-size: 20px;
           line-height: 1.5;
-          font-weight: 300;
+          font-family: "Open-Sans-Regular";
           color: $black;
           @include media-breakpoint-down(md) {
             text-align: left;
           }
           a.scroll {
             color: $gray;
-            font-weight: 400;
+            font-family: "Open-Sans-Regular";
             text-transform: uppercase;
             letter-spacing: 4px;
           }
           strong {
-            font-weight: 700;
+            font-family: "Open-Sans-Extra-Bold";
             a {
               color: $black;
             }

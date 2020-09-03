@@ -85,7 +85,7 @@
   }
   .logo {
     color: $black;
-    font-weight: 600;
+    font-family: "Open-Sans-Regular";
     font-size: 0.5em;
     text-transform: uppercase;
   }
@@ -100,7 +100,7 @@
       padding: 0;
       margin: 0;
       list-style: none;
-      font-weight: 400;
+      font-family: "Open-Sans-SemiBold";
       font-size: 40px;
       @include media-breakpoint-down(sm) {
         font-size: 24px;
@@ -183,7 +183,7 @@ header {
       font-size: 20px;
       text-transform: uppercase;
       color: $black;
-      font-weight: 400;
+      font-family: "Open-Sans-Regular";
       letter-spacing: 5px;
       padding: 7px;
       display: block;

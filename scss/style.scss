@@ -6,13 +6,20 @@
 @import "owl";
 @import "type";
 
+* {
+  &::selection {
+    background-color: $black;
+    color: $white;
+  }
+}
+
 body {
   transition: 0.5s ease-in-out;
   font-family: $font-primary;
   background: $white;
   font-size: 18px;
   line-height: 1.8;
-  font-weight: 400;
+  font-family: "Open-Sans-Regular";
   color: darken($black, 45%);
   position: relative;
   &:after {
@@ -68,9 +75,9 @@ a {
 //resume button
 .resume-btn {
   border: 2px solid $primary;
-  padding: 8px 16px;
+  padding: 8px 18px;
   border-radius: 150px;
-  font-weight: 500;
+  font-family: "Open-Sans-Regular";
   background-color: transparent;
   color: $primary;
   transition: 0.3s ease-in-out;
@@ -103,7 +110,7 @@ a {
       left: -50px;
       right: 0;
       bottom: 0;
-      font-weight: 900 !important;
+      font-family: "Lora-Bold" !important;
       color: lighten($gray, 43%);
       text-transform: uppercase;
       @include media-breakpoint-up(lg) {
@@ -119,53 +126,6 @@ a {
   }
 }
 
-// experience
-.exp {
-  width: 100%;
-  float: left;
-  margin-bottom: 3em;
-}
-.exp-wrap {
-  width: 100%;
-  border-bottom: 1px solid lighten($gray, 40%);
-  float: left;
-  .desc,
-  .year {
-    float: left;
-  }
-  .desc {
-    width: calc(100% - 150px);
-    h4 {
-      font-weight: 900;
-      font-family: "Open Sans", sans-serif;
-      @include media-breakpoint-down(sm) {
-        font-size: 0.9em;
-      }
-      span {
-        color: $gray;
-        font-weight: 300;
-        font-family: "Open Sans", sans-serif;
-        @include media-breakpoint-down(sm) {
-          font-size: 0.9em;
-        }
-      }
-    }
-    .location {
-      margin-bottom: 0;
-      font-size: 0.8em;
-      color: $gray;
-    }
-  }
-  .year {
-    width: 150px;
-    @include media-breakpoint-down(sm) {
-      text-align: right;
-      float: right;
-      font-size: 0.65em;
-    }
-  }
-}
-
 // text for project thumbnails
 .thumb-text {
   width: 100%;
@@ -175,8 +135,7 @@ a {
     padding: 7%;
   }
   .subheading {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
+    font-family: "Open-Sans-Regular";
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
