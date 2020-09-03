@@ -8489,10 +8489,12 @@ header {
   src: url("../fonts/open_sans/OpenSans-Regular.ttf"); }
 @font-face {
   font-family: "Open-Sans-SemiBold";
-  src: url("../fonts/open_sans/OpenSans-SemiBold.ttf"); }
+  src: url("../fonts/open_sans/OpenSans-SemiBold.ttf");
+  font-weight: bold; }
 @font-face {
   font-family: "Open-Sans-Bold";
-  src: url("../fonts/open_sans/OpenSans-Bold.ttf"); }
+  src: url("../fonts/open_sans/OpenSans-Bold.ttf");
+  font-weight: bolder; }
 @font-face {
   font-family: "Open-Sans-Extra-Bold";
   src: url("../fonts/open_sans/OpenSans-ExtraBold.ttf"); }
@@ -8518,6 +8520,10 @@ h5,
   font-family: "Lora-Bold", serif;
   line-height: 1.5;
   color: #121212; }
+
+b,
+strong {
+  font-family: "Open-Sans-Bold"; }
 
 .min-font {
   font-size: 0.8em; }
