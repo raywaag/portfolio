@@ -44,7 +44,7 @@ h5,
 .h5 {
   font-family: "Lora-Bold", serif;
   line-height: 1.5;
-  color: $black;
+  color: $white;
 }
 b,
 strong {
@@ -63,6 +63,9 @@ strong {
 }
 .text-gray {
   color: $gray !important;
+}
+.text-white {
+  color: $white !important;
 }
 
 // ========================= ALIGNMENT

@@ -96,7 +96,7 @@
   float: right;
 }
 .owl-carousel .animated {
-  animation-duration: 1s;
+  animation-duration: 10ms;
   animation-fill-mode: both;
 }
 .owl-carousel .owl-animated-in {

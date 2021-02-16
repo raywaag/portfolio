@@ -19,7 +19,7 @@
       @include transition(0.7s);
       span {
         &:before {
-          font-size: 40px;
+          font-size: 30px;
         }
       }
       opacity: 0;
@@ -90,7 +90,7 @@
         opacity: 0;
       }
       .slider-text {
-        color: $black;
+        color: $white;
         height: calc(100vh - 117px);
         min-height: 700px;
         position: relative;
@@ -105,11 +105,11 @@
           bottom: 0;
           font-family: "Open-Sans-Extra-Bold" !important;
           font-size: 100px;
-          color: $black;
+          color: $white;
         }
         h1 {
           font-size: 55px;
-          color: $black;
+          color: $white;
           line-height: 1.2;
           font-family: "Open-Sans-Bold";
           text-transform: uppercase;
@@ -117,17 +117,18 @@
           display: inline-block;
           position: relative;
           @include media-breakpoint-down(md) {
-            font-size: 30px;
-            text-align: left;
+            font-size: 24px;
+            text-align: center;
+            line-height: 1.4;
           }
         }
         p {
           font-size: 20px;
           line-height: 1.5;
           font-family: "Open-Sans-Regular";
-          color: $black;
+          color: $white;
           @include media-breakpoint-down(md) {
-            text-align: left;
+            text-align: center;
           }
           a.scroll {
             color: $gray;
@@ -138,7 +139,7 @@
           strong {
             font-family: "Open-Sans-Extra-Bold";
             a {
-              color: $black;
+              color: $white;
             }
           }
         }
@@ -147,9 +148,9 @@
           font-size: 13px;
           letter-spacing: 1px;
           span {
-            border-bottom: 2px solid $black;
+            border-bottom: 2px solid $white;
             a {
-              color: $black;
+              color: $white;
             }
           }
         }
@@ -159,7 +160,7 @@
       .owl-prev,
       .owl-next {
         span {
-          color: $black;
+          color: $white;
         }
       }
     }
@@ -190,7 +191,7 @@
         height: 18px;
         margin: 5px;
         border-radius: 50%;
-        background: lighten($black, 90%);
+        background: lighten($white, 90%);
         background: none;
         border: 2px solid rgba(255, 255, 255, 0.5);
         outline: none !important;

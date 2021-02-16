@@ -6,7 +6,7 @@
   padding: 0;
   width: 100%;
   height: 100%;
-  background: rgba($white, 0.99);
+  background: rgba($black, 0.98);
   z-index: 1002;
   text-align: center;
   visibility: hidden;
@@ -56,18 +56,17 @@
     &.show {
       visibility: visible;
       opacity: 1;
-      color: $black;
+      color: $white;
     }
     &:hover {
-      // background: rgba(0,0,0,1);
       i {
         &::before,
         &::after {
           content: "";
           width: 40px;
           height: 2px;
-          background: $black;
-          color: $black;
+          background: $white;
+          color: $white;
           position: absolute;
           left: 0;
         }
@@ -84,10 +83,14 @@
     transform: scale(1);
   }
   .logo {
-    color: $black;
+    color: $white;
     font-family: "Open-Sans-Regular";
     font-size: 0.5em;
     text-transform: uppercase;
+    &:hover,
+    &:focus {
+      color: $black;
+    }
   }
   ul {
     padding: 0;
@@ -107,56 +110,21 @@
       }
       a {
         display: block;
-        color: $black;
+        color: $white;
         padding: 5px 0;
-        span {
-          font-size: 40px;
-          color: $black;
-          position: relative;
-          padding: 0 10px;
-          small {
-            position: absolute;
-            bottom: 15px;
-            left: -30px;
-            font-size: 16px;
-            color: darken($black, 60%);
-            border-bottom: 1px solid darken($black, 60%);
-          }
-          @include media-breakpoint-down(sm) {
-            font-size: 30px;
-          }
-        }
         &:hover,
         &:active,
         &:focus {
           outline: none;
           text-decoration: none;
-          opacity: 0.5;
-          span {
-            &:before {
-              visibility: visible;
-              -webkit-transform: scaleX(1);
-              -moz-transform: scaleX(1);
-              -ms-transform: scaleX(1);
-              -o-transform: scaleX(1);
-              transform: scaleX(1);
-            }
-          }
+          color: $primary;
+          background-color: transparent;
         }
       }
       &.active {
         a {
           span {
             color: $primary;
-            &:before {
-              background: $primary;
-              visibility: visible;
-              -webkit-transform: scaleX(1);
-              -moz-transform: scaleX(1);
-              -ms-transform: scaleX(1);
-              -o-transform: scaleX(1);
-              transform: scaleX(1);
-            }
           }
         }
       }
@@ -182,7 +150,7 @@ header {
     .logo {
       font-size: 20px;
       text-transform: uppercase;
-      color: $black;
+      color: $white;
       font-family: "Open-Sans-Regular";
       letter-spacing: 5px;
       padding: 7px;
@@ -199,11 +167,13 @@ header {
       }
       &:hover {
         text-decoration: none !important;
+        color: $black;
       }
       &:active,
       &:focus {
         outline: none;
         text-decoration: none;
+        color: $black;
       }
     }
   }
@@ -215,14 +185,14 @@ header {
   &.active i {
     &::before,
     &::after {
-      background: $black;
+      background: $white;
     }
   }
   &.dark {
     &.active i {
       &::before,
       &::after {
-        background: $black;
+        background: $white;
       }
     }
   }
@@ -231,32 +201,34 @@ header {
   &:active {
     outline: none;
     border-bottom: none !important;
+    padding: 5px 15px 15px 15px;
+    background-color: darken($white, 75%);
   }
   i {
     position: relative;
     display: inline-block;
     width: 40px;
     height: 2px;
-    color: $black;
+    color: $white;
     font: bold 14px/0.4 Helvetica;
     text-transform: uppercase;
     text-indent: -55px;
-    background: $black;
+    background: $white;
     transition: all 0.2s ease-out;
     .menu-show & {
-      background: $black;
-      color: $black;
+      background: $white;
+      color: $white;
     }
     &::before,
     &::after {
       content: "";
       width: 40px;
       height: 2px;
-      background: $black;
+      background: $white;
       position: absolute;
       left: 0;
       .menu-show & {
-        background: $black;
+        background: $white;
       }
       @include transition(0.2s);
     }
@@ -264,12 +236,12 @@ header {
   &.dark {
     i {
       position: relative;
-      color: $black;
-      background: $black;
+      color: $white;
+      background: $white;
       transition: all 0.2s ease-out;
       &::before,
       &::after {
-        background: $black;
+        background: $white;
         @include transition(0.2s);
       }
     }
