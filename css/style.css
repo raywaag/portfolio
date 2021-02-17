@@ -8528,7 +8528,10 @@ strong {
   text-align: right !important; }
 
 *::selection {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.995);
+  color: #222222; }
+* ::-moz-selection {
+  background-color: rgba(255, 255, 255, 0.995);
   color: #222222; }
 
 body {
