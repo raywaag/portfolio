@@ -306,15 +306,6 @@
               </form>
             </div>
 
-              <!-- PASSWORD TEST -->
-              <form id="passphraseForm">
-                <label for="passphrase">Enter Passphrase:</label>
-                <input type="text" id="passphrase" name="passphrase" required>
-                <button type="submit">Submit</button>
-              </form>
-              
-
-
             <!-- HCA Careers -->
             <div class="col-md-6 col-sm-12 col-12 thumb-text">
               <h4 class="subheading">UX for a Fortune 50 Company</h4>
@@ -428,33 +419,7 @@
           </div>
         </div>
       </footer>
-    </div>
-
-
-    <!-- PASSWORD SCRIPT -->
-    <script>
-      document.getElementById('passphraseForm').addEventListener('submit', function (event) {
-        event.preventDefault();
-
-        // Mapping table: passphrase and file to use
-        const passphraseMapping = {
-          '1': 'disney',
-        };
-
-        // Get the passphrase from form
-        const passphrase = document.getElementById('passphrase').value;
-
-        // check for phrase on mapping above
-        if (passphraseMapping[passphrase]) {
-          // Go to the file
-          window.location.href = window.location.origin + passphraseMapping[passphrase];
-        } else {
-          // Display an alert if no match
-          alert('Passphrase not recognized. Please try again.');
-        }
-      });
-    </script>
-    
+    </div>    
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
