@@ -82,8 +82,8 @@
           <div class="col-md-8 heading-section animate">
             <img src="images/disney-mdt/mdt_logo-twinkle.svg" alt="MyDisneyToday Logo" class="img-fluid d-block mb-2 w-auto"
               style="height: 80px;" />
-            <h1>Business Entity Admin Tool</h1>
-            <img src="images/disney-mdt/mdt-bec-header.png" alt="My Profile Career Screenshot" class="img-fluid mt-3" />
+            <h1>Content Page Admin Console</h1>
+            <img src="images/disney/mdt-content-page-admin.png" alt="My Profile Career Screenshot" class="img-fluid mt-3" />
           </div>
         </div>
 
@@ -91,15 +91,17 @@
             <div class="col-md-8">
               <h1 class="mb-4 text-primary">Overview</h1>
               <p>
-                MyDisneyToday thrives on business collaboration. In the early months following launch, our product team took the lead
-                on business configurations and updates through the ServiceNow ("Native") portal which pulled us away from our core responsibilities. These
+                MyDisneyToday thrives on business collaboration and content presented to employees across all regions. Content pages were similar to a WordPress CMS-like experience. 
+                I designed them specfically for our needs as a company and as brand managers.
+                In the early months following launch, our product team took the lead
+                building and updating content pages which pulled us away from our core responsibilities. These
                 were tasks we always intended to empower our partners to manage themselves. Since the initial launch focused on
-                delivering the MVP, the Business Admin Console quickly followed as a key next step. What follows is an overview of
+                delivering the MVP, the content page admin quickly followed. This is an overview of
                 that console and how it supports self-service and scalability.
               </p>
-              <h2 class="mb-3 mt-5">Without the Admin Console</h2>
+              <h2 class="mb-3 mt-5">Without a Content Page Admin</h2>
               <p class="mb-3">
-                  The biggest struggles we faced without an admin console were:          
+                  The biggest setbacks faced without the page admin were:          
                 </p>
               <ul class="mt-3">
                 <li>
@@ -115,22 +117,26 @@
                   <strong>Lack of empowerment for business partners</strong> - The needs of unique brands across Disney are rightfully high. But meeting all of the for everybody with just one 
                   small team was not productive and required a solution.
                 </li>
+                <li>
+                  <strong>Little sense of ownership for businesses</strong> - Everything published on a content page was derived straight from the businesses themselves. It was 
+                  important to make it feel that way and give each business ownership over their content.
+                </li>              
               </ul>
 
               <h2 class="mb-3 mt-5">Opportunities</h2>
               <p class="mb-3">
-                This introduced a series of opportunities that drove our admin tool experience:
+                Opportunities we could provide by releasing a fully-functional page admin were:
               </p>
               <ul class="mt-3">
                 <li>
-                  <strong>Reduce product team overhead</strong> - Shifting configuration ownership to business users frees up the product team to focus on core innovation.
+                  <strong>Reduce product team overhead</strong> - Shifting page ownership to business managers frees up the product team to focus on core innovation.
                 </li>
                 <li>
-                  <strong>Accelerate content deployment</strong> - Reaching out to recruiters, teams, and hiring managers
-                  can be undependable via email alone.
+                  <strong>Accelerate content deployment</strong> - Insteading over going through a multi-level process to build and release page updates, businesses could edit and publish 
+                  immediately if desired.
                 </li>
                 <li>
-                  <strong>Empower business partners</strong> - Providing the right tools allows partners to manage their own configurations, increasing agility.
+                  <strong>Empower business partners</strong> - Providing the right tools allows partners to manage their own content, increasing agility.
                 </li>
                 <li>
                   <strong>Introduce scalable self-service</strong> - A self-service model reduces operational friction and scales better with growing business needs.
@@ -145,43 +151,42 @@
               <p class="mb-4">
                 Because MyDisneyToday delivers a tailored experience for employees across various businesses and regions, it was
                 essential to provide our brands with the flexibility to curate their own content. This included the ability to customize
-                navigation and homepage widgets to better serve the needs of their specific employee groups.
+                pages they own to better serve the needs of their employees or internal promotions.
               </p>
               <ul class="mt-3">
                 <li>
-                  <strong>Everything in One Place</strong> - Searching, applying, and application tracking should
-                  live in a single place.
+                  <strong>Previewability</strong> - The native console of page editing didn't offer an opportunity to view edits while admins worked. It wasn't until a page was published that 
+                  an admin could even see what they had done. We needed a change to preview pages prior to publishing in this model.
                 </li>
                 <li>
-                  <strong>Poor Communication</strong> - Reaching out to recruiters, teams, and hiring managers
-                  can be undependable via email alone.
+                  <strong>Page drafts</strong> - Drafts could sit after save until businesses were ready to pubslih them. This way, they can confidently publish when they are truly ready.
                 </li>
                 <li>
-                  <strong>Visual Hire Timeline</strong> - Visually convey where candidates are in the process
-                  along with the status of their application.
+                  <strong>On-page uploads</strong> - In the native console, image uploads happened in a completely different area of the system. In the new console, we needed 
+                  to be able to upload and use images without leaving the editing page.
                 </li>
                 <li>
-                  <strong>Job Suggestions & Recruitment</strong> - Suggest open roles based on job preferences and allow
-                  employees to open themselves to recruitment.
+                  <strong>Bulk uploads</strong> - Instead of using the Media Library (another part of the front-end MDT admin), admins wanted to upload all their files while editing. 
+                  Introducing a bulk upload feature would allow them to do this easily. Sometimes users pave their own path and, as designers, we need to accomodate them.
                 </li>
                 <li>
-                  <strong>Communication Preferences</strong> - Offer multiple forms of reliable communication for
-                  employees to ensure correspondence.
+                  <strong>Targeting</strong> - Pages needed to be targeted not only so that businesses and regions could see them, but also departments, orgnizations, and job levels.
                 </li>
                 <li>
-                  <strong>Single-Click Application</strong> - With Workday profiles, resume uploads, portfolio links,
-                  and more, applications can be much more streamlined.
-                </li>
-                <li>
-                  <strong>Role Transparencyn</strong> - Make employees aware of a role’s job level, salary,
-                  flexibility type, team, and hiring manager.
+                  <strong>Compact editing</strong> - This console needed a complete sitemap refersh from the current native workflow. Instead of being segregated to 
+                  multiple pages and sections, this new console required compact, single-page editing.
                 </li>
               </ul>
 
+              <h3 class="mb-2 mt-5">Current (Native) Workflow</h3>
+              <p class="mb-4">
+                As stated throughout the business needs above, the native console didn't allow for previewing, required multiple levels to make even minor changes, and was unintuitive.
+              </p>
+              <img src="images/disney-mdt/bec-sitemap.jpg" alt="Disney Profile Career Portal" class="img-fluid br" />
+
               <h3 class="mb-2 mt-5">Proposed Workflow</h3>
               <p class="mb-4">
-                If not careful, this admin tool could have quickly turned into a web of links, tabs, pages and confusion. I set up a portal workflow to 
-                provide an intuitive and simple way for businesses to access <i>their</i> content quickly and seamlessly publish updates.
+                The proposed workflow incredibly simplified the tool. It quickly became much less of a hassle to make edits and was an inviting interface for out business partner to use.
               </p>
               <img src="images/disney-mdt/bec-sitemap.jpg" alt="Disney Profile Career Portal" class="img-fluid br" />
               
@@ -192,133 +197,246 @@
                 into one that was usable and required very little training. These are the implementations designed and developed to invite business collaboration.
               </p>
 
-              <h2 class="mt-5 mb-2">List Views</h2>
+              <h2 class="mt-5 mb-2">Building a Page</h2>
               <p>
                 The first page you'd see entering the admin console is a list of business entity configurations. This name carried over from legacy development but refers to each 
                 targets business experience. For security, it's critical that businesses only work on configurations that they own - introducing permissions. Showing and hiding features 
                 depending on user levels allowed us to simplify the list view and get content managers where they needed to go as quickly as possible.
               </p>
-              <img src="images/disney-mdt/bec-list-views.png" alt="Disney Profile Career Portal"
+              <p>
+                <a href="https://www.figma.com/proto/PZVQb0Kz0NaEBhFDPvCqlU/Content-Pages--Admin-Console-?page-id=322%3A48420&node-id=322-48421&viewport=560%2C4491%2C0.37&t=1wW0ZiTu7qj9U98q-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=322%3A48421&show-proto-sidebar=1&hide-ui=1" target="_blank">
+                  🎬 View Prototype
+                </a>
+              </p>              
+              <img src="images/disney/mdt-content-page-admin.png" alt="Disney Profile Career Portal"
                 class="img-fluid br" />
 
-
-
-              <h2 class="mt-10 mb-2">Editing a BEC</h2>
+              <!-- List View -->
+              <h4 class="mt-5">List View</h4>
               <p>
-                Once an admin is inside their business configuration, they can edit various aspects of their site - such as the top navigation, left navigation, footer, and homepage cards, or widgets, to include 
-                resources, events and news.
+                The first page admins see entering when going to edit a page is a list of pages and their associated businesses. For security, it's critical that 
+                businesses only work on pages that they own so we introduced automatic filtering and permissions based on their assigned business. Showing and hiding features
+                depending on user levels allowed us to simplify the list view and get content managers where they needed to go as quickly as possible.
               </p>
-
-              <!-- Homepage Cards -->
-              <h4 class="mt-5">Homepage Widgets</h4>
               <p>
-                MyDisneyToday has a dyanmic homepage. Employees can edit their widgets to create a workspace that suits them. 
-                These widgets include business-specific conetnt such as Featured News, Upcoming Events, and Resources. Other widgets that don't require business involvement are 
-                Disney Stock, Learning & Development, Groupd & Clubs, and Employee Recognitions.
+                <a href="https://www.figma.com/proto/PZVQb0Kz0NaEBhFDPvCqlU/Content-Pages--Admin-Console-?page-id=322%3A48420&node-id=322-48421&viewport=560%2C4491%2C0.37&t=1wW0ZiTu7qj9U98q-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=322%3A48421&show-proto-sidebar=1&hide-ui=1" target="_blank">
+                  🎬 Page List View
+                </a>
               </p>
               <h5 class="mb-3">Requirements</h5>
               <ul class="mt-3 mb-4">
                 <li>
-                  <strong>Default Cards</strong> - Businesses are able to establish the initial layout of their homepage, before an employee moves, adds, or removes widgets.
+                  <strong>Automatic filtering</strong> - By pulling from employee HR information, we could filter the page on entry depending on an admins position in the company.
                 </li>
                 <li>
-                  <strong>Default Reources</strong> - Like cards, default resources are set by businesses to establish a productive start to an employee's first visit to MDT - an attempt 
-                  to give them what they need prior to customization.
+                  <strong>Apparent page name</strong> - Admins relied on the name of the page to navigate to them. We needed this to be right-aligned and apprent so they were not searching for it.
                 </li>
                 <li>
-                  <strong>Upcoming Events Card</strong> - The Events card was targeted per business and region. Employees would only see events they can attend.
+                  <strong>Chronological ordering</strong> - To make it easier and quicker for admins to navigate, the default ordering of the list view would display the most recent page to be edited first.
                 </li>
                 <li>
-                  <strong>Featured News</strong> - Each business had one or more news feeds. On the Featured News card for each business, their would be default feeds. This typically included 
-                  the business or regional feed plus some enterprise subscriptions like Disney Today and Corporate Socialability. Employees could then unsubscribe to default feeds or subscribe to 
-                  new feeds themsevles.
-                </li>
-                <li>
-                  <strong>Important Information</strong> - Also targeted per location, region, and business, the important information card came to be through COVID as news had to be promoted and "pinned" 
-                  to employee bulletins such as vaccine information and workplace flexibility guidelines.
+                  <strong>Page state</strong> - Drafts and pubslished page states were beneficial to see right on entry into the console.
                 </li>
               </ul>
-              <img src="images/disney-mdt/bec-homepage-cards.png" alt="Disney Profile Career Portal"
+              <img src="images/mdt-pages/mdt-page-list-view.png" alt="Disney Profile Career Portal"
                 class="img-fluid br" />
-              <img src="images/disney-mdt/mdt-editing-homepage-cards.png" alt="Disney Profile Career Portal" class="img-fluid br mt-3" />
 
-
-              <!-- Top Navigation -->
-              <h4 class="mt-10">Top Navigation</h4>
+              <!-- Page Details -->
+              <h4 class="mt-10">Page Details</h4>
               <p>
-                Top navigation was one of the few places businesses could brand MyDisneyToday. To uphold accessibility compliance, we didn't allow for too much color customization. 
-                Top navs could be given background colors and text colors. This went through our approval to maintain an accessible contract on the navigation bar.
+                When a page is initially created, the business should be pulled automatically through employee data. The admin needs to then define a page name and URL slug in order to save the initial draft.
               </p>
+              <p>
+                <a href="https://www.figma.com/proto/PZVQb0Kz0NaEBhFDPvCqlU/Content-Pages--Admin-Console-?page-id=322%3A48420&node-id=338-71121&viewport=-540%2C2933%2C0.24&t=6RfnGx8Oer16QiiP-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=322%3A48421&show-proto-sidebar=1&hide-ui=1"
+                  target="_blank">
+                  🎬 Initial Page Creation
+                </a>
+              </p>              
               <h5 class="mb-3">Requirements</h5>
               <ul class="mt-3 mb-4">
                 <li>
-                  <strong>Logo</strong> - Locked and remained the "MyDisneyToday" logo, only changed for the year of Disney's 100th anniversary in 2023.
+                  <strong>Page name</strong> - Required field that appears at the top and in the breadcrumbs of a published page.
                 </li>
                 <li>
-                  <strong>Text color</strong> - After implementation of the MyDisney design system and dark mode, this option became a dropdown of only curated colors.
+                  <strong>URL slug</strong> - This follows the main 'mydisneytoday' URL and sits at the end of the page's link.
                 </li>
                 <li>
-                  <strong>Background color</strong> - Businesses updated this to stamp their brand onto MyDisneyToday
+                  <strong>Automatic association</strong> - The create page should automatically associate the business the admin is assigned to.
                 </li>
                 <li>
-                  <strong>Preview</strong> - Something I really despised about the native console was the lack of knowing. When designing the front-end console, it was important to add 
-                  in featured so admins could view their work as they go.
+                  <strong>Targeting</strong> - Not required, but targteing could be added at this stage if needed.
+                </li>
+                <li>
+                  <strong>Keywords</strong> - Not required, but keywords could be added at this stage if needed. Keywords were used in MyDisneyToday searches to promote pages.
                 </li>
               </ul>
-              <img src="images/disney-mdt/mdt-topnav-edit.png" alt="Disney Profile Career Portal" class="img-fluid br mb-4" />
-              <img src="images/disney-mdt/mdt-topnavs.png" alt="Disney Profile Career Portal" class="img-fluid br" />
+              <img src="images/mdt-pages/mdt-page-reqs.png" alt="Disney Profile Career Portal" class="img-fluid br mb-4" />
               
               
-              <!-- Left Navigation -->
-              <h4 class="mt-10">Left Navigation</h4>
+              <!-- Adding Tabs -->
+              <h4 class="mt-10">Adding Tabs</h4>
               <p>
-                The left navigation panel offered limited customization. We provided businesses with a section of navigation to make their own. Links that did not change were those such as 
-                News, Events, Resources, My Account, and Help.
+                Pages could use tabs as a secondary form of navigation. When pages and microsites weren't too coplex, this would be a good way to group content without 
+                having to build multiple pages.
+              </p>
+              <p>
+                <a href="https://www.figma.com/proto/PZVQb0Kz0NaEBhFDPvCqlU/Content-Pages--Admin-Console-?page-id=322%3A48420&node-id=322-48531&viewport=231%2C888%2C0.07&t=LnMo35f8vJorpp68-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=322%3A48531&show-proto-sidebar=1&hide-ui=1"
+                  target="_blank">
+                  🎬 Create Tabs
+                </a>
               </p>
               <h5 class="mb-3">Requirements</h5>
               <ul class="mt-3 mb-4">
                 <li>
-                  <strong>Main menus</strong> - The highest level were the main menus that expanded to offer additional links.
+                  <strong>On-page editing</strong> - Tabs needed to be editable from the page directly without having to navigate admins away from the page.
                 </li>
                 <li>
-                  <strong>Multi-level link management</strong> - The left navigation had a hierarchy of Nav Panel > Main Menu > Sub-links. It was important to know what was being edited and 
-                  to design that flow thoughtfully.
+                  <strong>Tab visualization</strong> - My favorite part of the tabs was creating a way for admins to edit them as they appear on the page - as tabs! As admins 
+                  added tabs, they would display in order on the editing page. Navigating between them would allow tab-specific editing.
+                </li>
+                <li>
+                  <strong>Targeting</strong> - Tabs also needed to be targetable in the case a business needs to hide an entire tab from a group of employees.
                 </li>
                 <li>
                   <strong>Link information</strong> - After organizaing the main menus, links required fields to define the link names, URLs, icons, and targeting.
                 </li>
               </ul>
-              <img src="images/disney-mdt/mdt-bec-leftnavs.png" alt="Disney Profile Career Portal"
-                class="img-fluid br" />
-              <img src="images/disney-mdt/mdt-left-nav-flow.png" alt="Disney Profile Career Portal" class="img-fluid br mt-3" />
+              <img src="images/mdt-pages/mdt-add-tabs.png" alt="Disney Profile Career Portal"
+                class="img-fluid br" />              
               
-              
-              <!-- Footer -->
-              <h4 class="mt-10">Footer</h4>
+              <!-- Adding Panels -->
+              <h4 class="mt-10">Adding Panels</h4>
               <p>
-                The footer rarely changed. Unless businesses were added, removed, or renamed, the footer was essentially set from launch. However, we needed a way to make adjustments as needed.
+                Page layout was pulled from "panels" - these housed type of columns seen below. This, as well as columns, is where a majority of editing time is spent.
+              </p>
+              <p>
+                <a href="https://www.figma.com/proto/PZVQb0Kz0NaEBhFDPvCqlU/Content-Pages--Admin-Console-?page-id=322%3A48420&node-id=322-49668&viewport=231%2C888%2C0.07&t=LnMo35f8vJorpp68-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=322%3A48531&show-proto-sidebar=1&hide-ui=1"
+                  target="_blank">
+                  🎬 Create Panels
+                </a>                                     
               </p>
               <h5 class="mb-3">Requirements</h5>
               <ul class="mt-3 mb-4">
                 <li>
-                  <strong>Logo</strong> - This remained the MyDisneyToday logo.
+                  <strong>Panel name</strong> - Striclty for ease of navigating the page admin. This panel name would not appear on the front-end.
                 </li>
                 <li>
-                  <strong>Background color</strong> - Set to the $footer variable to adjust for light and dark modes.
+                  <strong>Panel type</strong> - This could be 1 column to 6 columns. It was rare to see anything above four columns being used.
                 </li>
                 <li>
-                  <strong>Text description</strong> - Legality text that was only updated per legal guidance.
+                  <strong>Tab</strong> - This would automatically be set to the tab in which the panel was created under. However, this field offered a chance for admins to move panels 
+                  between tabs if they needed.
                 </li>
                 <li>
-                  <strong>Links</strong> - Linked to the privacy policy and each business' content page (different than homepage, click the link at the bottom of this page!)
+                  <strong>Header</strong> - This would be shown on the page above a panel's content. It could be left, right, or cetner-aligned.
                 </li>
+                <li>
+                  <strong>Adding a button</strong> - If the panel required action, there was an option to add a button centered beneath the panel.
+                </li>              
               </ul>
-              <img src="images/disney-mdt/mdt-bec-footer.png" alt="Disney Profile Career Portal"
+              <img src="images/mdt-pages/mdt-page-panels.png" alt="Disney Profile Career Portal"
                 class="img-fluid br" />
 
-                <div class="text-align-center mt-10"> 
-              <p>Explore more of the Admin Console</p>
-              <a href="mdt-pages" target="_blank">Managing MDT Pages</a>
+
+              <!-- Adding Columns -->
+              <h4 class="mt-10">Adding Columns</h4>
+              <p>
+                While a panel setup the layout of a column, the actual content was pulled in through columns. These columns housed content such as images, videos, 
+                carousels, accordions, and more.
+              </p>
+              <p>
+                <a href="https://www.figma.com/proto/PZVQb0Kz0NaEBhFDPvCqlU/Content-Pages--Admin-Console-?page-id=322%3A48420&node-id=322-49908&viewport=231%2C888%2C0.07&t=LnMo35f8vJorpp68-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=322%3A48531&hide-ui=1"
+                  target="_blank">
+                  🎬 Create a Column
+                </a> |
+                <a href="https://www.figma.com/proto/PZVQb0Kz0NaEBhFDPvCqlU/Content-Pages--Admin-Console-?page-id=468%3A45839&node-id=468-63229&viewport=-721%2C703%2C0.12&t=wMOyPqstBrMiqL2C-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=468%3A63229&show-proto-sidebar=1&hide-ui=1"
+                  target="_blank">
+                  Accordions
+                </a> |
+                <a href="https://www.figma.com/proto/PZVQb0Kz0NaEBhFDPvCqlU/Content-Pages--Admin-Console-?page-id=468%3A45839&node-id=480-74343&viewport=-721%2C703%2C0.12&t=wMOyPqstBrMiqL2C-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=480%3A74343&show-proto-sidebar=1&hide-ui=1"
+                  target="_blank">
+                  Forms
+                </a> |
+                <a href="https://www.figma.com/proto/PZVQb0Kz0NaEBhFDPvCqlU/Content-Pages--Admin-Console-?page-id=468%3A45839&node-id=468-46675&viewport=-721%2C703%2C0.12&t=wMOyPqstBrMiqL2C-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=468%3A46675&show-proto-sidebar=1&hide-ui=1"
+                  target="_blank">
+                  Images
+                </a> |
+                <a href="https://www.figma.com/proto/PZVQb0Kz0NaEBhFDPvCqlU/Content-Pages--Admin-Console-?page-id=468%3A45839&node-id=480-83724&viewport=-721%2C703%2C0.12&t=wMOyPqstBrMiqL2C-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=480%3A83724&show-proto-sidebar=1&hide-ui=1"
+                  target="_blank">
+                  Image Galleries
+                </a> |
+                <a href="https://www.figma.com/proto/PZVQb0Kz0NaEBhFDPvCqlU/Content-Pages--Admin-Console-?page-id=468%3A45839&node-id=480-82265&viewport=-721%2C703%2C0.12&t=wMOyPqstBrMiqL2C-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=480%3A82265&show-proto-sidebar=1&hide-ui=1"
+                  target="_blank">
+                  Text
+                </a>
+              </p>
+              <h5 class="mb-3">Requirements</h5>
+              <ul class="mt-3 mb-4">
+                <li>
+                  <strong>Column type selection</strong> - Offer the ability to choose the type of column from images to galleries to just plain text.
+                </li>
+                <li>
+                  <strong>Panel selection</strong> - This would auto-populate with the panel in which the column was created within. However, it could be changed if an admin wanted 
+                  to move a column to another panel.
+                </li>
+                <li>
+                  <strong>Accordion column type</strong> - Ability to add content with columns to create the hierarchy of an accordion.
+                </li>
+                <li>
+                  <strong>Image column type</strong> - This includes the image shape (square, rectangle, circle, or banner), image upload and preview, header to display below image, and a link 
+                  field if the image and header needs to link somewhere.
+                </li>
+                <li>
+                  <strong>Image Gallery column type</strong> - Ability to bulk add images, order them, and remove them from the gallery.
+                </li>            
+              </ul>
+              <img src="images/mdt-pages/mdt-page-images.png" alt="Disney Profile Career Portal" class="img-fluid br" />
+              <img src="images/mdt-pages/mdt-page-gallerty-accordion.png" alt="Disney Profile Career Portal" class="img-fluid br mt-2" />
+
+            
+              <!-- Translations -->
+              <h1 class="mb-4 text-primary mt-12">Translating Pages</h1>
+              <p class="mb-4">
+                Translating pages was another obstacle that could easily get out of control. It took a few iterations to land on the most seamless solution.
+              </p>
+              <p>
+                <a href="https://www.figma.com/proto/PZVQb0Kz0NaEBhFDPvCqlU/Content-Pages--Admin-Console-?page-id=1901%3A77158&node-id=1901-77190&viewport=-560%2C476%2C0.23&t=W7LAKO5ne4bbxVKh-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=1901%3A77159&show-proto-sidebar=1&hide-ui=1"
+                  target="_blank">
+                  🎬 Add Translaitons
+                </a>
+              </p>
+              <img src="images/mdt-pages/page-translations.png" alt="Disney Profile Career Portal" class="img-fluid br" />
+              <img src="images/mdt-pages/page-translation-example.png" alt="Disney Profile Career Portal" class="img-fluid br mt-3" />
+              <img src="images/mdt-pages/page-translation-board.png" alt="Disney Profile Career Portal" class="img-fluid br mt-3" />
+              
+              <!-- Collaborating with Developers -->
+              <h1 class="mb-4 text-primary mt-12">Collaborating with Developers</h1>
+              <p class="mb-4">
+                With a development background, I enjoy bridging the design-development gap. I try to afford the developers with as much as I can to help them and expedite development.
+              </p>
+              <p>
+                <a href="https://www.figma.com/proto/PZVQb0Kz0NaEBhFDPvCqlU/Content-Pages--Admin-Console-?page-id=424%3A87940&node-id=424-90316&viewport=221%2C199%2C0.17&t=tGxoMmOXFIxLPl9H-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=442%3A45859&show-proto-sidebar=1&hide-ui=1"
+                  target="_blank">
+                  🎬 View Spec Sheets
+                </a>
+              </p>
+              <img src="images/mdt-pages/page-specs-examples.png" alt="Disney Profile Career Portal" class="img-fluid br" />
+              <img src="images/mdt-pages/page-specs-gallery.png" alt="Disney Profile Career Portal" class="img-fluid br mt-3" />
+
+
+              <!-- Console Recieved -->
+              <h1 class="mb-4 text-primary mt-12 text-align-center">Delivered!</h1>
+              <p class="mb-4 text-align-center">
+                This was a long awaited tool - it took many sprints and stakeholder updates. It was also the first place the MyDisney design system
+                was implemented!
+              </p>
+
+              <div class="text-align-center mt-10">
+                <p><strong>✨ Explore more of MyDisneyToday ✨</strong></p>
+                <a href="mydisneytoday" target="_blank">⬅ Back to MyDisneyToday</a><br />
+                <a href="mdt-bec-admin" target="_blank">BEC Admin Console</a> <br />
+                <a href="mdt-profile" target="_blank">Employee Profile Experience</a> <br />
+                <a href="mdt-ai" target="_blank">MDT + AI Assistant</a>
               </div>
             </div>
             <!-- .col-md-8 -->
